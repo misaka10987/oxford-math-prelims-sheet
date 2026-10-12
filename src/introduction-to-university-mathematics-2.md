@@ -43,7 +43,7 @@ x & x \in [1, 2)\\
    
    (v) 0.
    
-   (vi) 
+   (vi) 240.
 
 4. (i) True.
    
@@ -148,6 +148,4 @@ f(AB) &= \sum_{i=1}^n(AB)_{i,i}
 
 10. Let $f: C \to A$ be a surjection and $g : B \to D$ be an injection.
     
-    Then $\phi : X \to Y = x \mapsto g \circ x \circ f$ is an injection. $\square$ 
-    
-    
+    Then $\phi : X \to Y = x \mapsto g \circ x \circ f$ is an injection. Because for every two different function $x$ , they have at least one different output on a same input, the fact that $f$ is surjective guarantees that input is covered, and the fact that $g$ is injective guarantees that is does not map the different outputs to the same in $D$ . $\square$ 
