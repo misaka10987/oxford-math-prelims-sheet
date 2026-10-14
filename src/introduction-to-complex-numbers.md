@@ -60,30 +60,28 @@ z - z ^{-1} &= 1 \angle \theta - 1 \angle (-\theta)
    \begin{align*}
 \int_0^{\frac \pi 2} \cos^ 5 \theta \mathrm d \theta
 &= \int_0^{\frac \pi 2} \frac{1}{16}
- (\cos 5 \theta + 5 \cos 3 \theta + 10 \cos \theta)
+(\cos 5 \theta + 5 \cos 3 \theta + 10 \cos \theta)
 \mathrm d \theta
-\\ &= \frac{1}{16}\int_0^\frac{5\pi}2 \cos \theta_1 \mathrm d \theta_1
-+ \frac{1}{16}\int_0^\frac{3\pi}2 5 \cos \theta_2 \mathrm d \theta_2
-+ \frac{1}{16}\int_0^\frac{\pi}2 10 \cos \theta_3 \mathrm d \theta_3
-\\ &= \frac{1}{16} \sin \theta \big| _0^{\frac{5\pi}{2}} 
-+ \frac{5}{16} \sin \theta \big| _0^{\frac{3\pi}{2}} 
-+ \frac{10}{16} \sin \theta \big| _0^{\frac{\pi}{2}} 
+\\ &= \frac{1}{16}\int_0^\frac{5\pi}2 \cos \theta_1 \mathrm d \theta_1+
+\frac{1}{16}\int_0^\frac{3\pi}2 5 \cos \theta_2 \mathrm d \theta_2+ 
+\frac{1}{16}\int_0^\frac{\pi}2 10 \cos \theta_3 \mathrm d \theta_3
+\\ &= \frac{1}{16} \sin \theta \big| _0^{\frac{5\pi}{2}} +
+\frac{5}{16} \sin \theta \big| _0^{\frac{3\pi}{2}}  +
+\frac{10}{16} \sin \theta \big| _0^{\frac{\pi}{2}} 
 \\ &= \frac{3}{8}
 \end{align*}
    $$
 
-8. 
-   
-   $$
+8. $$
    \begin{align*}
 1 + \zeta + \zeta^2 + \zeta^3 + \zeta^4
-&= \mathrm e^{\mathrm i \frac{0\pi}{5} }
-+ \mathrm e^{\mathrm i \frac{2\pi}{5} }
-+ \mathrm e^{\mathrm i \frac{4\pi}{5} }
-+ \mathrm e^{\mathrm i \frac{6\pi}{5} }
-+ \mathrm e^{\mathrm i \frac{8\pi}{5} }
-\\ &= \sum_{i=0}^4 \sin \frac{2i \pi}5
-+ \mathrm i \sum_{i=0}^4 \cos \frac{2i\pi}5
+&= \mathrm e^{\mathrm i \frac{0\pi}{5} }+ 
+\mathrm e^{\mathrm i \frac{2\pi}{5} }+
+\mathrm e^{\mathrm i \frac{4\pi}{5} }+ 
+\mathrm e^{\mathrm i \frac{6\pi}{5} }+ 
+\mathrm e^{\mathrm i \frac{8\pi}{5} }
+\\ &= \sum_{i=0}^4 \sin \frac{2i \pi}5+ 
+\mathrm i \sum_{i=0}^4 \cos \frac{2i\pi}5
 \\&= 0
 \end{align*} 
    $$
@@ -118,11 +116,9 @@ z ^2 + z - 1 &= (z - \zeta - \zeta^4) (z - \zeta^2 - \zeta^3)
    $$
    \begin{align*}
 \cos \frac \pi 7 + \cos \frac{3\pi}7 + \cos \frac{5 \pi}7
-& = \frac{1}{2}(\omega_1 + {\omega_1}^{-1})
-+ \frac{1}{2}(\omega_2 + {\omega_2}^{-1})
-+ \frac{1}{2}(\omega_3 + {\omega_3}^{-1})
+& = \frac{1}{2}(\omega_1 + {\omega_1}^{-1}) + \frac{1}{2}(\omega_2 + {\omega_2}^{-1}) + \frac{1}{2}(\omega_3 + {\omega_3}^{-1})
 \\ &= \frac{1}{2} ( \omega_1 + \omega_7 +
- \omega_2 + \omega_6 + \omega_3 + \omega_5)
+\omega_2 + \omega_6 + \omega_3 + \omega_5)
 \\ &=\frac{1}{2}( - \omega_4)
 \\ &= \frac{1}{2} \space \square
 \end{align*}
@@ -132,10 +128,8 @@ z ^2 + z - 1 &= (z - \zeta - \zeta^4) (z - \zeta^2 - \zeta^3)
     
     $$
     \begin{align*}
-\zeta - \zeta^6 &= \mathrm e ^{\mathrm i \frac \pi 7}
- - \mathrm e ^{\mathrm i \frac {6 \pi} 7}
-\\ &= \cos \frac \pi 7 + \mathrm i \sin \frac \pi 7 
-- \cos \frac {6\pi} 7 - \mathrm i \sin \frac {6\pi} 7
+\zeta - \zeta^6 &= \mathrm e ^{\mathrm i \frac \pi 7} - \mathrm e ^{\mathrm i \frac {6 \pi} 7}
+\\ &= \cos \frac \pi 7 + \mathrm i \sin \frac \pi 7  - \cos \frac {6\pi} 7 - \mathrm i \sin \frac {6\pi} 7
 \\ &= 2 \cos \frac \pi 7
 \end{align*}
     $$
@@ -155,8 +149,7 @@ z ^2 + z - 1 &= (z - \zeta - \zeta^4) (z - \zeta^2 - \zeta^3)
     \begin{align*}
 (\zeta - \zeta^6) (\zeta^3 - \zeta^4) (\zeta^5 - \zeta^2)
 & = (\zeta ^4 + \zeta^2 - \zeta^5 - \zeta^3 )(\zeta^5 - \zeta^2)
-\\& = - \zeta^2 - 1 + \zeta^ 3 +\zeta
-- \zeta^6 - \zeta^4 - 1 + \zeta^5
+\\& = - \zeta^2 - 1 + \zeta^ 3 +\zeta - \zeta^6 - \zeta^4 - 1 + \zeta^5
 \\ & = - (\zeta^6 - \zeta^ 5 + \zeta^ 4 - \zeta^3 + \zeta^2 - \zeta + 1) - 1
 \end{align*}
     $$
