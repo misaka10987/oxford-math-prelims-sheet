@@ -95,18 +95,18 @@
    \begin{align*}
 &\frac{| \mathbf r - \mathbf a|^2 - \lambda ^ 2 |\mathbf r|^2}
 {1 - \lambda ^ 2}
- = |\mathbf r - \mathbf b | ^ 2 - \lambda^2 |\mathbf b| ^ 2
+= |\mathbf r - \mathbf b | ^ 2 - \lambda^2 |\mathbf b| ^ 2
 \\ 
 \iff & (\mathbf r - \mathbf a)^2 - \lambda^2 \mathbf r ^ 2
- = (1 - \lambda ^ 2) ((\mathbf r - \mathbf b)^2 - \lambda^2 \mathbf b^2)
+= (1 - \lambda ^ 2) ((\mathbf r - \mathbf b)^2 - \lambda^2 \mathbf b^2)
 \\
 \iff & \mathbf a^2 - 2\mathbf a \mathbf r 
-= 2\lambda^2 \mathbf b \mathbf r - 2 \mathbf b \mathbf r
- + \lambda^4 \mathbf b^2 - 2 \lambda^2 \mathbf b^2 + \mathbf b ^ 2
+= 2\lambda^2 \mathbf b \mathbf r - 2 \mathbf b \mathbf r +
+\lambda^4 \mathbf b^2 - 2 \lambda^2 \mathbf b^2 + \mathbf b ^ 2
 \\
 \iff& (1 - \lambda^2) ^2\mathbf b^2 - 2 (1 - \lambda^2) \mathbf b\mathbf r
-= 2\lambda^2 \mathbf b \mathbf r - 2 \mathbf b \mathbf r
- + \lambda^4 \mathbf b^2 - 2 \lambda^2 \mathbf b^2 + \mathbf b ^ 2
+= 2\lambda^2 \mathbf b \mathbf r - 2 \mathbf b \mathbf r +
+\lambda^4 \mathbf b^2 - 2 \lambda^2 \mathbf b^2 + \mathbf b ^ 2
 \\
 \iff & \mathrm{True}
 \end{align*}
@@ -122,33 +122,31 @@
 \\ \iff & 
 |\mathbf a - \mathbf x| ^ 2 - \lambda^2 |\mathbf x|^2 = 0
 \\ \iff &
-\frac{|\mathbf a - (1 - \lambda ^ 2) \mathbf x| ^ 2 
-- \lambda^2 |\mathbf a| ^ 2 }{
-    1 - \lambda^2
+\frac{|\mathbf a - (1 - \lambda ^ 2) \mathbf x| ^ 2 -
+\lambda^2 |\mathbf a| ^ 2 }{
+ 1 - \lambda^2
 } = 0
 \\ \iff & 
 ( \mathbf a - \mathbf x + \lambda^2 \mathbf x)^2
- = \lambda^2 \mathbf a^2
+= \lambda^2 \mathbf a^2
 \\ \iff &
 (\lambda - 1) (\lambda + 1)
 (\lambda \mathbf x - \mathbf x + \mathbf a )
 (\lambda \mathbf x + \mathbf x - \mathbf a) =0
 \\ \iff &
-(1 - \lambda^2)\mathbf x ^ 2 - 2 \mathbf a \mathbf x
- + a ^ 2 = 0
+(1 - \lambda^2)\mathbf x ^ 2 - 2 \mathbf a \mathbf x+
+a ^ 2 = 0
 \\ \iff &
 \mathbf x ^ 2 - \frac{2}{1 - \lambda^2} \mathbf a \mathbf x
- +\frac{1}{1 - \lambda^2} \mathbf a ^ 2 = 0
++\frac{1}{1 - \lambda^2} \mathbf a ^ 2 = 0
 \\ \iff &
 ( \mathbf x - \frac{1}{1 - \lambda^2}\mathbf a) ^ 2
 = \frac{1}{(1 - \lambda^2)^2} \mathbf a ^ 2 
 -\frac{1}{1 - \lambda^2} \mathbf a ^ 2
 \\ \iff &
 \lVert \mathbf x - \frac{1}{1 - \lambda^2}\mathbf a \rVert
- = \frac{\lambda}{1 - \lambda^2} \lVert \mathbf a \rVert
+= \frac{\lambda}{1 - \lambda^2} \lVert \mathbf a \rVert
 \end{align*}
    $$
    
    Which is a circle with centre $\frac{1}{1 - \lambda^2}\mathbf a$ and radius $\frac{\lambda}{1 - \lambda^2} \lVert \mathbf a \rVert$ .
-
-6. TODO
