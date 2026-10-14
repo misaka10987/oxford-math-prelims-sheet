@@ -98,9 +98,17 @@ b = \frac 1 2 (a + b) - \frac 1 2 (a - b)
    x \in (-3, -\frac 5 2) \cup (\frac 3 2, 2)
    $$
 
-5. Handwritten.
+5. (i) Handwritten.
    
-   TODO
+   ![](./5.i.png)
+   
+   (ii) Handwritten.
+   
+   ![](./5.ii.png)
+   
+   (iii) Handwritten.
+   
+   ![](./5.iii.png)
 
 6. (i)
    
