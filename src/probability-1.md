@@ -55,7 +55,7 @@
    
    (c) $0.235$ by applying the result of (b) with $B$ , $C$ , and $A$ corresponds to divisibility by $5$ , $7$ , and non-divisibility by $4$ , respectively.
 
-7. (a) ${n \choose 2} \frac{1}{365}$ , $n \ge 20$ .
+7. (a) $1 - \frac{\mathrm P_{365}^n}{365^n}$ , $n \ge 23$ .
    
    (b) $1 - (\frac{364}{365})^n$ , $n \ge 253$ .
 
@@ -106,4 +106,4 @@ p_n(r) & = {n \choose r} p_{n-r}(0)
 \end{align*}
    $$
    
-   
+   ?
