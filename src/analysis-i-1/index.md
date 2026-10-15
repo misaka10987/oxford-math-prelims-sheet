@@ -25,7 +25,7 @@
    
    > **Lemma** $a : \R$ , $a \in \R_{>0} \implies -(-a) \in \R_{>0}$ .
    > 
-   > **Proof** $a \in \R^+ \implies a \ne 0 \land (-a) \notin \R_{>0}$ , and $-a \ne 0$ because $a \ne 0$ , then $-(-a) \in \R_{>0}$ since exactly one of $-a \in \R_{>0}$ , $-a = 0$ , and $-(-a) \in \R_{>0}$ is true. $\square$ 
+   > **Proof** $a \in \R_{>0} \implies a \ne 0 \land (-a) \notin \R_{>0}$ , and $-a \ne 0$ because $a \ne 0$ , then $-(-a) \in \R_{>0}$ since exactly one of $-a \in \R_{>0}$ , $-a = 0$ , and $-(-a) \in \R_{>0}$ is true. $\square$ 
    
    $$
    \begin{align*}
