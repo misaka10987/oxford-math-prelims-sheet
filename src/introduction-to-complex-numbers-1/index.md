@@ -20,7 +20,9 @@
    
    $z = \frac{4 + \mathrm i \pm \sqrt { -5-12\mathrm i }}{2}$ and $z_1 = 3 - \mathrm i$ , $z_2 = 1 + \mathrm i$ .
 
-6. TODO
+6. Handwritten.
+   
+   ![](./6.png)
 
 7. (i) $z = 1 \angle \theta$ .
    
