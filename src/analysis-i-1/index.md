@@ -39,9 +39,24 @@
 \end{align*}
    $$
 
-2. ?
+2. $$
+   \begin{align*}
+a^{k + 1} & = 
+\exp ((k + 1) \ln a)
+\\ &= \exp (k \ln a + \ln a)
+\\ & = \exp (k \ln a) \exp(\ln a)
+\\ &= a^ka \space  \square
+\end{align*}
+   $$
    
-   By definition?
+   $$
+   \begin{align*}
+a^{m + n} & = \exp ((m + n) \ln a)
+\\ &= \exp(m \ln a + n \ln a)
+\\ &= \exp(m \ln a ) + \exp( n \ln a)
+\\ &= a^m a^n \space \square
+\end{align*}
+   $$
 
 3. (i) $a \ge 0 \land b \ge 0 \lor a \le 0 \land b \le 0 \implies |a+b|=|a|+|b|$ directly by expanding the definition of absolute value. The inverse is obvious when $a=0$ or $b = 0$ , so we now assume $ab \ne 0$ .
    
