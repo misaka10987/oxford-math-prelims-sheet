@@ -1,5 +1,6 @@
 +++
 # TOML Frontmatter
+completed = 2026-10-16
 +++
 
 # Sheet 1
@@ -99,11 +100,11 @@
    
    $$
    \begin{align*}
-p_n(r) & = {n \choose r} p_{n-r}(0)
-\\ & = { n \choose r} (1 -
-\sum_{i=1}^{n - r} (-1)^{i + 1} \frac{1}{i!} )
-\\ & = { n \choose r} \sum_{k = 0}^{n - r}\frac{(-1)^k}{k!}
+p_n(r) & = {n \choose r} p_r(r) p_{n-r}(0)
+\\ & = { n \choose r} \left( \frac{1}{\mathrm P_r^r} \right) 
+\left(1 -
+\sum_{i=1}^{n - r} (-1)^{i + 1} \frac{1}{i!} \right )
+\\ & = \frac{1}{r!}
+\sum_{k = 0}^{n - r}\frac{(-1)^k}{k!} \space \square
 \end{align*}
    $$
-   
-   ?
