@@ -1,5 +1,6 @@
 +++
 # TOML Frontmatter
+# Done: 2026-10-16, skipped 4
 +++
 
 # Sheet 1
@@ -30,7 +31,11 @@
    
    ![](./2.1.png)
    
-   ?
+   $n \in \left\{ 2n + 1 \mid n \in \N \right\}$ .
+   
+   $I_1 = \frac 1 2 $ , $I_3 = \frac 1 2$ , $I_5 = 1$ .
+   
+   $I_0 = \frac{\sqrt \pi}2$ , $I_2 = \frac{\sqrt \pi}4$ , $I_4 = \frac{3\sqrt \pi}8$ , $I_6 = \frac{15 \sqrt \pi}{16}$ .
 
 3. (a) Handwritten.
    
