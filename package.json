@@ -1,0 +1,12 @@
+{
+  "name": "oxford-math-prelims-sheet",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  }
+}
