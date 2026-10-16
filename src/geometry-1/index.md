@@ -1,8 +1,10 @@
 +++
 # TOML Frontmatter
+completed = 2026-10-16
+submitted = 2026-10-16
 +++
 
-# Problem Sheet 1
+# Sheet 1
 
 1. (i) If $\mathbf a = \mathbf p + \lambda_a \mathbf r$ , $\mathbf b = \mathbf p + \lambda _p \mathbf r$ , and $\mathbf c = \mathbf p + \lambda _c \mathbf r$ , then $\mathbf v = (\lambda_b - \lambda_a) \mathbf r$ and $\mathbf w = (\lambda_c - \lambda_a) \mathbf r$ are linearly dependent because
    
@@ -124,7 +126,7 @@
 \\ \iff &
 \frac{|\mathbf a - (1 - \lambda ^ 2) \mathbf x| ^ 2 -
 \lambda^2 |\mathbf a| ^ 2 }{
- 1 - \lambda^2
+1 - \lambda^2
 } = 0
 \\ \iff & 
 ( \mathbf a - \mathbf x + \lambda^2 \mathbf x)^2
