@@ -1,5 +1,6 @@
 +++
 # TOML Frontmatter
+completed = 2026-10-16 16:42:00
 +++
 
 # Problem Sheet 1
@@ -164,4 +165,4 @@ z ^2 + z - 1 &= (z - \zeta - \zeta^4) (z - \zeta^2 - \zeta^3)
     
     and then $\cos \frac \pi 7 \cos \frac {3\pi} 7 \cos \frac{5\pi} 7 = \frac 1 8 (\zeta - \zeta^6) (\zeta^3 - \zeta^4) (\zeta^5 - \zeta^2) = - \frac 1 8$ . $\square$ 
     
-    (ii) TODO
+    (ii) :(
