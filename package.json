@@ -3,8 +3,12 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "new-sheet": "bun run script/new-sheet.ts"
+  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "smol-toml": "^1.9.1"
   },
   "peerDependencies": {
     "typescript": "^7"
