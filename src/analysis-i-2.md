@@ -26,12 +26,88 @@
    > 
    > **Proof** If $l' = \inf S > l$ , then let $\varepsilon = l' - l$ and $l'$ is not a lower bound. $\square$ 
    
-   $\forall \varepsilon \in \R > 0$ , let $\varepsilon_S = \varepsilon_T = \frac{1}{2} \varepsilon$ , and $\exist s \in S, t \in T$ s.t. $\inf S \le s < \inf S + \varepsilon_S$ and $\inf T \le t < \inf T + \varepsilon_T$ , then $l \le s + t < \inf S + \varepsilon_S + \inf T + \varepsilon_T = l + \varepsilon$ , and $l = \inf(S + T)$ by the lemma above.
+   $\forall \varepsilon \in \R > 0$ , let $\varepsilon_S = \varepsilon_T = \frac{1}{2} \varepsilon$ , and $\exist s \in S, t \in T$ s.t. $\inf S \le s < \inf S + \varepsilon_S$ and $\inf T \le t < \inf T + \varepsilon_T$ , then $l \le s + t < \inf S + \varepsilon_S + \inf T + \varepsilon_T = l + \varepsilon$ , and $l = \inf(S + T)$ by the lemma above. $\square$ 
 
 4. > **Lemma** $\forall a, b \in \R_{>0}$ , $a < b$ , $\exist x \in \R$ s.t. $a < x^3 < b$ .
    > 
    > **Proof** Let 
    
-   a
+   TODO
 
-5. a
+5. (i) If there exists a surjection $f : \N \to \R \backslash \mathbb Q$ , since we already know $\mathbb Q$ is countable, let $g : \N \to \mathbb Q$ be a surjection, then
+   
+   $$
+   h : \N \to \R = n \mapsto \begin{cases}
+g\left(\frac{n}{2}\right) & 2 \mid n \\
+f\left( \frac{n-1}{2} \right) & \text{otherwise}
+\end{cases}
+   $$
+   
+   is an $\N \to \R$ surjection, which contradicts with the fact that $\R$ is uncountable. $\square$ 
+   
+   (ii) By Archimedean property, let $n \gt \frac{1}{b-a}$ , then $\frac{1}{n} < b-a$ .
+   
+   $a + \frac{1}{n} < b$ , $na + 1 < nb$ . Let $m$ be an integer between $[na, na+1)$ , then $a < \frac m n < b$ . $\square$ 
+   
+   (iii) Let $a<b$ and $x = \frac{a+b}{2}$ .
+   
+   - If $x \notin \mathbb Q$ we are done.
+   
+   - If $x \in \mathbb Q$ , let $y = \frac{a + x}{2}$ .
+     
+     - If $y \notin \mathbb Q$ , we are done.
+     
+     - If $y \in \mathbb Q$ , let $z = y + (x-y)(\pi-3)$ , then $z \in (x, y) \subseteq (a, b)$ and $z$ is transcendental. $\square$ 
+
+6. (i) Let $p_n$ be the $n$ -th prime. Let $P = \left \{ \prod_{i=1}^8 {p_i}^{m_i} \mid m_i \in \N \space \forall i \in \Z \right\}$ .
+   
+   Define
+   
+   $$
+   \begin{align*}
+f &: P \to \Z[x] / \langle x^4 \rangle \\ 
+&= \prod_{i=1}^8 {p_i}^{m_i} \mapsto
+(m_1-m_2)x^3 + (m_3-m_4)x^2 + (m_5-m_6) x + (m_7-m_8)
+\end{align*}
+   $$
+   
+   Then $f$ is a well-defined surjection. $\square$ 
+   
+   (ii) $x_0$ being root of $f(x) \in \mathbb C[x]$ $\implies (x - x_0) \mid f(x)$ , therefore by counting the degree an $n$ -degree polynomial in $\mathbb C[x]$ cannot have more than $n$ distinct roots. $\square$ 
+   
+   (iii)
+   
+   > **Lemma** $\Z^n$ is countable $\forall n \in \N$ .
+   > 
+   > **Proof** Similar to (i), let $P = \left\{ \prod_{i=1}^{2n} {p_i}^{m_i} \mid m_i \in \N \space \forall i \in \Z \right\}$ , and define
+   > 
+   > $$
+   > f: P \to \Z^n = \prod_{i=1}^n {p_i}^{m_i}
+\mapsto (m_1 - m_2, m_3 - m_4, \cdots, m_{n-1}-m_n)
+   > $$
+   > 
+   > Then $f$ is a well-defined surjection. $\square$ 
+   
+   Let $\phi_n$ be an $\N \to \Z^n$ surjection.
+   
+   Let $f_{n}$ denote the $n$ -th root of $f(x) \in \mathbb C[x]$ . Then
+   
+   $$
+   f : \Z[x] \times \N \to \overline{\mathbb Q}
+= (f, n) \mapsto f_n
+   $$
+   
+   is a surjection.
+   
+   Let $\pi_n : \Z^n \to \Z[x]/\langle x^{n-1} \rangle$ be the bijection that maps coefficients to polynomials.
+   
+   Then
+   
+   $$
+   \begin{align*}
+g & : \N  \to \overline{\mathbb Q}
+\\ & = ((d,n,m) \mapsto f( (\pi_d\phi_n(m), n) ) ) \circ \phi_3
+\end{align*}
+   $$
+   
+   is a surjection because every polynomial has a finite degree. Therefore $\overline{\mathbb Q}$ is countable and the transcendental numbers $\mathbb C \backslash \overline{\mathbb Q}$ is uncountable because $\mathbb C$ is uncountable. $\square$ 
