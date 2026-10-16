@@ -1,15 +1,29 @@
 +++
 # TOML Frontmatter
 completed = 2026-10-16 16:42:00
+submitted = 2026-10-16
 +++
 
-# Problem Sheet 1
+# Sheet 1
 
 1. $2x^2 -6x + 9 = 0$ and $-4x^2 + 7x - 9 = 0$ .
 
-2. Because $\mathbb C$ is a field it has no zero-factors.
+2. Let $z = a + b\mathrm i$ and $w = c + d\mathrm i$ , then
    
-   $|z||w| = |zw| = 0 \implies |z | = 0 \lor |w | = 0 \implies z = 0 \lor w = 0$ .
+   $$
+   \begin{align*}
+& zw = 0
+\\ \iff & (ac - bd) + (bc + ad)\mathrm i = 0 
+\\ \iff & \begin{cases}
+ac - bd = 0 \\
+bc + ad = 0
+\end{cases}
+\\ \iff & c = d = 0 \lor a = b = 0
+\\ \iff & z = 0 \lor w = 0 \space \square
+\end{align*}
+   $$
+   
+   $|z||w| = |zw| = 0 \implies |z | = 0 \lor |w | = 0 \implies z = 0 \lor w = 0$ . $\square$ 
 
 3. $5-5\mathrm i$ , $5 + 5\mathrm i$ , $\frac{1 + 7\mathrm i}{4}$ , $-4$ .
 
@@ -166,3 +180,5 @@ z ^2 + z - 1 &= (z - \zeta - \zeta^4) (z - \zeta^2 - \zeta^3)
     and then $\cos \frac \pi 7 \cos \frac {3\pi} 7 \cos \frac{5\pi} 7 = \frac 1 8 (\zeta - \zeta^6) (\zeta^3 - \zeta^4) (\zeta^5 - \zeta^2) = - \frac 1 8$ . $\square$ 
     
     (ii) :(
+    
+    > I tried for ~10min.
