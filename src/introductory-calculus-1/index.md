@@ -1,6 +1,7 @@
 +++
 # TOML Frontmatter
-# Done: 2026-10-16, skipped 4
+completed = 2026-10-17
+submitted = 2026-10-17
 +++
 
 # Sheet 1
@@ -46,6 +47,8 @@
    ![](./3.b.png)
 
 4. :(
+   
+   > I tried for ~20min.
 
 5. Handwritten.
    
