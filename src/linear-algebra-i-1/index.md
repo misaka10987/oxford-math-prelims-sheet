@@ -75,7 +75,7 @@ z = t
 = \begin{pmatrix} 2 & 3 \\
 8 & 13 \\
 16 & 26
- \end{pmatrix}
+\end{pmatrix}
    $$
    
    $$
@@ -83,7 +83,7 @@ z = t
 = \begin{pmatrix} 14 & 20 & 26
 \\20 & 29 & 38 \\
 26 & 38 & 50
- \end{pmatrix}
+\end{pmatrix}
    $$
 
 4. (i)
@@ -111,7 +111,7 @@ z = t
    $$
    \left \{ \begin{pmatrix} a & b \\ 0 & a - b\end{pmatrix} \in \R^{2 \times 2}
 \mid a, b \in \R
- \right \}
+\right \}
    $$
    
    (iii)
