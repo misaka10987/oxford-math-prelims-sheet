@@ -1,6 +1,6 @@
 +++
 # TOML Frontmatter
-# TODO
+completed = 2026-10-17 17:24:00
 +++
 
 # Sheet 2
@@ -28,11 +28,13 @@
    
    $\forall \varepsilon \in \R > 0$ , let $\varepsilon_S = \varepsilon_T = \frac{1}{2} \varepsilon$ , and $\exist s \in S, t \in T$ s.t. $\inf S \le s < \inf S + \varepsilon_S$ and $\inf T \le t < \inf T + \varepsilon_T$ , then $l \le s + t < \inf S + \varepsilon_S + \inf T + \varepsilon_T = l + \varepsilon$ , and $l = \inf(S + T)$ by the lemma above. $\square$ 
 
-4. > **Lemma** $\forall a, b \in \R_{>0}$ , $a < b$ , $\exist x \in \R$ s.t. $a < x^3 < b$ .
-   > 
-   > **Proof** Let 
+4. Let $S = \left\{ x \in \R \mid x^3 < 2 \right\}$ . Obviously $1 \in S$ .
    
-   TODO
+   Let $\alpha = \sup S$ . If $\alpha^3 < 2$ , have $(\alpha+h)^3 = \alpha^3 + 3\alpha^2h + 3\alpha h^2 + h^3 < \alpha^3 + (3\alpha^2+3\alpha+1)h$ , and let $0< h <\min(1, \frac{2-\alpha^3}{3\alpha^2 + 3 \alpha + 1})$ , then $(\alpha + h)^3 <2$ , which gives a contradiction.
+   
+   On the other hand, if $\alpha ^ 3 > 2$ , have $(\alpha - h)^3 = \alpha^3 - 3 \alpha^2 h + 3 \alpha h^2 - h^3 > \alpha^3 - (3 \alpha^2 + 1) h$ , and let $0 < h < \frac{\alpha^3 - 2}{3\alpha^2 + 1}$ , then $(\alpha - h)^3 > 2$ . Then $S$ has no element in $(\alpha - h)$ and $\alpha$ , which contradicts with the Approximation Property.
+   
+   If $\alpha^3 = \beta^3 = 2$ , then obviously $\alpha, \beta > 0$ , and $\alpha^3 -\beta^3 = 0 \implies (\alpha - \beta) (\alpha^2 + \alpha \beta + \beta^2 ) = 0 \implies \alpha = \beta$ . $\square$ 
 
 5. (i) If there exists a surjection $f : \N \to \R \backslash \mathbb Q$ , since we already know $\mathbb Q$ is countable, let $g : \N \to \mathbb Q$ be a surjection, then
    
