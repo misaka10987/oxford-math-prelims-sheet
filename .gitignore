@@ -2,3 +2,6 @@ node_modules/
 
 **.pdf
 !src/**/problem.pdf
+
+TODO.xlsx
+.~lock.TODO.xlsx#
