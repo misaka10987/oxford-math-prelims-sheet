@@ -34,4 +34,63 @@ M^3 \mathbf x &= \mathbf a \wedge
    
    By function extensionality, $M^3 = -\lVert \mathbf a \rVert^2M$ . $\square$ 
 
-3. (i) 
+3. (i) Obviously $A$ , $B$ , and $C$ are collinear if and only if $\mathbf 0$ , $\mathbf b - \mathbf a$ , and $\mathbf c - \mathbf a$ are collinear, by translation of the space by $-\mathbf a$ .
+   
+   Then
+   
+   $$
+   \begin{align*}
+& (\mathbf b - \mathbf a) \wedge (\mathbf c- \mathbf a) = 0
+\\ \iff & \mathbf b \wedge \mathbf c -
+\mathbf b \wedge \mathbf a -
+\mathbf a \wedge \mathbf c +
+\mathbf a \wedge \mathbf a = 0
+\\ \iff & \mathbf b \wedge \mathbf c +
+\mathbf a \wedge \mathbf b +
+\mathbf c \wedge \mathbf a = 0 \space \square
+\end{align*}
+   $$
+   
+   (ii)
+   
+   $$
+   \begin{align*}
+& \mathbf r (\mathbf a \wedge \mathbf b + 
+\mathbf b \wedge \mathbf c +
+\mathbf c \wedge \mathbf a)
+= [\mathbf a, \mathbf b, \mathbf c]
+\\ \iff 
+&
+[\mathbf r, \mathbf a, \mathbf b] +
+[\mathbf r, \mathbf b, \mathbf c] +
+[\mathbf r, \mathbf c, \mathbf a] = [\mathbf a, \mathbf b, \mathbf c]
+\end{align*}
+   $$
+   
+   Obviously $\mathbf a$ , $\mathbf b$ , $\mathbf c$ satisfy the equation because the triple-product is non-zero only if the vectors are linearly independent, and the original equation is in a planar form. Since three non-collinear points determine a plane, $\mathbf r (\mathbf a \wedge \mathbf b + 
+   \mathbf b \wedge \mathbf c +
+   \mathbf c \wedge \mathbf a)
+   = [\mathbf a, \mathbf b, \mathbf c]$ is the desired plane.
+   
+   Since colpanar $\iff$ $D$ being on the plane $ABC$ ,
+   
+   $$
+   \begin{align*}
+&\text{Coplanar}( \left\{ A, B, C, D \right\} )
+\\ \iff & 
+[\mathbf d, \mathbf a, \mathbf b] +
+[\mathbf d, \mathbf b, \mathbf c] +
+[\mathbf d, \mathbf c, \mathbf a]
+= [\mathbf a, \mathbf b, \mathbf c]
+\\ \iff & 
+[\mathbf a, \mathbf b, \mathbf c] -
+[\mathbf b, \mathbf c, \mathbf d] + 
+[\mathbf c, \mathbf d, \mathbf a] - 
+[\mathbf d, \mathbf a, \mathbf b] = 0
+\space \square
+\end{align*}
+   $$
+
+4. (i) 
+
+5. a
