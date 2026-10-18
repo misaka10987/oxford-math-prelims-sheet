@@ -3,7 +3,7 @@
 completed = 2026-10-16
 +++
 
-# Sheet 1
+# Analysis I — Sheet 1
 
 1. (i) Multiply by $a^{-1}$ on both sides since $a \ne$ 0 and $\R$ is a field.
    
