@@ -95,7 +95,7 @@ f &: P \to \Z[x] / \langle x^4 \rangle \\
    Let $f_{n}$ denote the $n$ -th root of $f(x) \in \mathbb C[x]$ . Then
    
    $$
-   f : \Z[x] \times \N \to \overline{\mathbb Q}
+   \sigma : \Z[x] \times \N \to \overline{\mathbb Q}
 = (f, n) \mapsto f_n
    $$
    
@@ -108,7 +108,7 @@ f &: P \to \Z[x] / \langle x^4 \rangle \\
    $$
    \begin{align*}
 g & : \N  \to \overline{\mathbb Q}
-\\ & = ((d,n,m) \mapsto f( (\pi_d\phi_n(m), n) ) ) \circ \phi_3
+\\ & = ((d,n,m) \mapsto \sigma( (\pi_d\phi_n(m), n) ) ) \circ \phi_3
 \end{align*}
    $$
    
