@@ -68,10 +68,14 @@ e - s_{n + 1} & = e-s_n - \frac{1}{(n+1)!}
 \end{align*}
      $$
    
-   Therefore
-   
-   
-   
-   
+   TODO: irrational
 
-6. a
+6. (i) It is bounded by $u_1$ . $s_{n+1} \ge \min(s_n , \frac{s_n + u_n}{2}) \ge s_n$ . $\square$ 
+   
+   (ii) $\forall n \in \N$ :
+   
+   - If $s_n$ is constant since $n$ , then $s_n$ is the upper bound and $\alpha = s_n$ .
+   
+   - If $s_m > s_n$ for some $m > n$ , let $\varepsilon = \frac{1}{2}(s_m-s_n)$ , then there exists $N \in \N$ that the $N$ -th tail falls into $(\alpha - \varepsilon, \alpha + \varepsilon)$ , and $\alpha \ge s_{\max(N, m)} - \varepsilon > s_n$ is an upper bound. $\square$ 
+   
+   (iii) If this is not the case, let $\varepsilon = \alpha - \sup S$ and there exists an $s_n \in ( \alpha - \varepsilon, \alpha + \varepsilon)$ and greater than $\sup S$ . $\square$ 
