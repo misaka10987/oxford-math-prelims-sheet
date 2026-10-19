@@ -1,5 +1,6 @@
 +++
 # TOML Frontmatter
+completed = 2026-10-19
 +++
 
 # Analysis I — Sheet 4
@@ -30,17 +31,19 @@
    
    (iii) This follows directly from (i) and (ii) since monotonous bounded sequences converge. $\square$ 
    
-   > **Lemma** Let $d_n = a_n - \sqrt 3$ , then $d_n < 2^{-n}$ .
+   > **Lemma** Let $d_n = a_n - \sqrt 3$ , then $\exist d > 0$ s.t. $d_n < 2^{-n}d$ .
    > 
    > **Proof** By induction.
    > 
-   > - $d_1 = 2 - \sqrt 3 < 1$ .
+   > - Let $d_1 < 2^{-1}d$ .
    > 
-   > - If $d_n < 2^{-n}$ , since $a_{n+1} \le \frac{1}{2}(a_n + \sqrt 3) = a_n + \frac{1}{2} d_n$ , $d_{n+1} \le \frac{1}{2}d_n < 2^{-(n+1)}$ . $\square$ 
+   > - If $d_n < 2^{-n}d$ , since $a_{n+1} \le \frac{1}{2}(a_n + \sqrt 3) = a_n + \frac{1}{2} d_n$ , $d_{n+1} \le \frac{1}{2}d_n < 2^{-(n+1)}d$ . $\square$ 
    
-   Given $\varepsilon > 0$ , let $N = \lceil-\log_2\min(\varepsilon, \frac 1 2)\rceil +1$ , then $a_n - \sqrt 3 = d_n < \varepsilon$ and $a_n \to \sqrt 3$ .
+   Given $\varepsilon > 0$ , let $N = \lceil-\log_2\min(\varepsilon, \frac 1 2) -\log_2d \rceil +1$ , then $a_n - \sqrt 3 = d_n < \varepsilon$ and $a_n \to \sqrt 3$ .
    
-   (iv) TODO
+   (iv) Handwritten.
+   
+   ![](./4.iv.png)
 
 5. It is obviously increasing because every term is positive.
    
@@ -55,7 +58,7 @@
    
    By induction.
    
-   -  $e -s_1 = \sum_{k=2}^\infin \frac{1}{k!} < \sum_{k=2}^\infin2^{-k} = 1$ .
+   - $e -s_1 = \sum_{k=2}^\infin \frac{1}{k!} < \sum_{k=2}^\infin2^{-k} = 1$ .
    
    - If $e - s_n < \frac{1}{n(n!)}$ , then
      
@@ -68,7 +71,17 @@ e - s_{n + 1} & = e-s_n - \frac{1}{(n+1)!}
 \end{align*}
      $$
    
-   TODO: irrational
+   Assume $e = \frac p q$ for some $p, q \in \N$ and $\gcd(p, q) = 1$ .
+   
+   Then
+   
+   $$
+   \frac p q - \sum_{k=0}^q\frac{1}{k!} < \frac{1}{q(q!)}
+\\
+\frac{ p(q-1)! - \sum_{k=0}^{q}(q-k)! }{q!} < \frac{1}{q(q!)}
+   $$
+   
+   Since the left hand side is positive and the numerator is an integer, it is at least $\frac{1}{q!} \ge \frac{1}{q(q!)}$ which gives a contradiction. $\square$ 
 
 6. (i) It is bounded by $u_1$ . $s_{n+1} \ge \min(s_n , \frac{s_n + u_n}{2}) \ge s_n$ . $\square$ 
    
