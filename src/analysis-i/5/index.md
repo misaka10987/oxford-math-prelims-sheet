@@ -103,11 +103,15 @@ p & \text{prime}\\
    
    (iv) Reuse the counterexample defined in (iii), all subsequences that does not contain a prime-indexed term are convergent, and there are uncountably many of them.
 
-5. (i) TODO
+5. (i) Handwritten.
+   
+   ![](./5.i.png)
    
    (ii) If $(x_n)$ converges then $\lim_{n \to \infin} \frac{x_{n + 1} }{x_n} = 1$ , $\lim_{n\to \infin} \frac{ {x_n}^5 + 2 }{6x_n} = 1$ , and $\frac{ {\lim_{n \to \infin}x_n}^5 + 2 }{ 6\lim_{n \to \infin}x_n } = 1$ . With $L = \lim_{n \to \infin} x_n$ we know $L^5 - 6L + 2 = 0$ . $\square$ 
    
-   (iii) TODO
+   (iii) Handwritten.
+   
+   ![](./5.iii.png)
    
    (iv) By induction.
    
@@ -126,22 +130,33 @@ p & \text{prime}\\
 \\ &= \frac 1 6 |x_n - x_{n - 1}| \left| \sum_{i=0}^4 {x_n}^i
 {x_{n-1} }^{4-i}
  \right|
-\\ & \le \frac 5 6 |x_n - x_{n - 1}| \space \square
+\\ & \le \frac 5 6 |x_n - x_{n - 1}|
 \end{align*}
    $$
    
+   Then by induction $|x_{n+1} - x_n| \le \frac 1 3(\frac 5 6)^{n - 1}$ . $\square$ 
+   
    (v) 
    
-   and
+   $$
+   \begin{align*}
+|x_n - x_m|  &\le \sum_{i=m}^{n-1} |x_ {i+1} - x_i|
+\\ & = \sum_{i=m}^{n-1} \frac 1 3 \left( \frac 5 6 \right)^{i-1}
+\\ & = \frac 1 3 \sum_{i=m}^{n-1} \left( \frac 5 6 \right)^{i-1}
+\end{align*}
+   $$
+   
+   And
    
    $$
-   x_n - x_{n - 1} = 
+   \begin{align*}
+\frac 1 3 \sum_{i=m}^{n-1} \left( \frac 5 6 \right)^{i-1}
+& = \frac 1 3 \left( \frac 5 6 \right)^{ m - 1 } 
+\frac{ 1- \left( \frac 5 6 \right)^{n-m} }{ 1 - \frac 5 6 }
+\\ & = \frac 1 3 \left( \frac 5 6 \right)^{ m - 1 } 6
+ \left(   1- \left( \frac 5 6 \right)^{n-m}\right)
+\\ \le 2\left( \frac 5 6 \right)^{ m - 1 } \space \square
+\end{align*}
    $$
    
-   
-   
-   
-   
-   a
-
-6. a
+   (vi) $\lim_{n \to \infin} x_n$ is a root of $L^2 - 6L + 2 = 0$ . Since $x_n \in [0, 1)$ $\forall n \in \N$ it can only tend to the root between $[0, 1)$ , or, $\beta$ . $\square$ 
