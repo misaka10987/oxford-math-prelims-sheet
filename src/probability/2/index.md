@@ -1,5 +1,6 @@
 +++
 # TOML Frontmatter
+completed = 2026-10-19
 +++
 
 # Probability — Sheet 2
@@ -118,14 +119,14 @@
 \end{align*}
    $$
    
-   (c) Let $\pi$ be the event that $X$ is prime. Let $P$ be the set of primes and $P_n$ be the $n$ -th prime. Then
+   (c) Let $P$ be the set of primes and $\pi_n$ be the $n$ -th prime. Then
    
    $$
    \begin{align*}
 \mathbb P(X = 1) &= \mathbb P\left( 
-\bigcap_{i=1}^\infin \overline {D_{P_i}}
+\bigcap_{i=1}^\infin \overline {D_{\pi_i}}
 \right)
-\\ & = \prod_{i=1}^\infin \mathbb P(\overline {D_{P_i}})
+\\ & = \prod_{i=1}^\infin \mathbb P(\overline {D_{\pi_i}})
 \\ & = \prod_{p \in P} (1 - \mathbb P(D_{p}) )
 \\ & = \prod_{p \in P}
 \left(1 - \frac{1}{p^s} \right)
