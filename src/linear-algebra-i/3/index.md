@@ -73,4 +73,59 @@ x \bullet (u_n + v_n) & = (x (u_n+v_n))
    
    (c) No.
 
-3. a
+3. Let $T$ have $n$ vectors $\mathbf v_1$ through $\mathbf v_n$ . Assume $T$ is linearly dependent. Then there exist scalars $a_i$ , $1 \le i \le n$ s.t. $\sum_{i=1}^n a_i \mathbf v_i = 0$ . Thus $T \backslash \left\{ \mathbf v_1 \right\}$ also spans $V$ because the generator $\mathbf v_1 = -\sum_{i=2}^{n}a_i \mathbf v_i$ can be expressed by other generators. But this contradicts with the fact that $T$ is smallest. $\square$ 
+
+4. (i) (a) Linearly dependent.
+   
+   (b) Linearly independent.
+   
+   (ii) (a) Linearly dependent.
+   
+   (b) Linearly independent.
+
+5. (i) (a) If not so, there exists $abc \ne 0$ s.t. $a(u + v) + b(u - v) + c(u - 2v + w) =0$ , then $(a+b+c)u + (a-b-2c)v + cw = 0$ but $c \ne 0$ , and $\left\{ u,v,w \right\}$ will be linearly dependent.
+   
+   (b) Not necessarily.
+   
+   $$
+   (\hat i + \hat j - 3 \hat k)
+-(\hat i + 3 \hat j - \hat k)
++2(\hat j + \hat k) = 0
+   $$
+   
+   (ii) (a) For otherwise, if $\sum_{1 \le i \le n} a_i \bullet c_iv_i = 0$ is a nontrivial linear combination then $\sum_{1 \le i \le n} (a_ic_i) \bullet v_i = 0$ is a nontrivial linear combination.
+   
+   (b) For otherwise, if $\sum_{1 \le i \le n} a_i \bullet w_i = 0$ is a nontrivial linear combination, then let $a = \sum_{1 \le i \le n} a_i$ and $(a+a_1)v_1 + \sum_{2 \le i \le n} a_iv_i =0$ , and it is nontrivial because:
+   
+   - If any of $a_2$ through $a_n$ is nonzero we are done.
+   
+   - If they are all zero, then $a_1$ cannot be zero and $a + a_1 = 2a_1$ is nonzero.
+
+6. (i) Obviously $\mathbf 0 \in V_1$ . $\forall \mathbf v, \mathbf w \in V_1$ ,
+   
+   $$
+   \begin{align*}
+\sum_{1 \le i \le n} (\mathbf v + \mathbf w)_i
+& = \sum_{1 \le i \le n} (\mathbf v_i + \mathbf w_i)
+\\ & = \sum_{1 \le i \le n}\mathbf v_i +
+\sum_{1 \le i \le n} \mathbf w_i
+\\ & = 0
+\end{align*}
+   $$
+   
+   $$
+   \sum_{1 \le i \le n} (c \mathbf v)_i
+= \sum_{1 \le i \le n} c \mathbf v_i
+= c \sum_{1 \le i \le n} \mathbf v_i
+= 0
+   $$
+   
+   Therefore $V_1$ is closed under vector addition and scalar multiplication, thus it is a subspace.
+   
+   For $\R^0$ , $\left\{ * \right\}$ is a basis.
+   
+   For $\R^1$ , $\left\{ (0) \right\}$ is a basis.
+   
+   For $n \ge 2$ , Let $\mathbf v_m \in \R^n$ be the vector where the $m$ -th component is $n-1$ and all other components are $-1$ , then $\left\{ \mathbf v_i \mid 1 \le i \le n \right\}$ is a basis.
+   
+   (ii) Obviously $\mathbf 0 \in V_2$ . $\forall \mathbf v, \mathbf w \in V_2$ .
