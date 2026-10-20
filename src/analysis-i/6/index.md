@@ -4,17 +4,7 @@
 
 # Analysis I — Sheet 6
 
-1. Because
-   
-   $$
-   \lim_{n \to \infin} \frac{ \left(1 - \frac 1 n \right)^n }
-{ \left( 1 + \frac 1 n \right)^n } = \lim_{n \to \infin}
-\left( \frac{n-1}{n+1} \right)^ n = 0
-   $$
-   
-   And $(1 + \frac 1 n)^n$ converges, so is $( 1- \frac 1 n) ^n$ .
-   
-   Therefore,
+1. We have
    
    $$
    \begin{align*}
@@ -22,8 +12,8 @@
 \lim_{n \to \infin} \left( 1 + \frac 1 n \right)^n
 &= \lim_{n \to \infin}
 \left(  \left( 1 - \frac 1 n \right)
- \left( 1 + \frac 1 n \right)
- \right)^n
+\left( 1 + \frac 1 n \right)
+\right)^n
 \\ & = \lim_{n \to \infin} \left( 1- \frac 1 {n^2} \right)^n
 \end{align*}
    $$
@@ -44,15 +34,15 @@
    \begin{align*}
 \lim_{n \to \infin} \frac{|a_{n+1}|}{ |a_n| }
 & = \lim_{n \to \infin} \frac{
-    \frac{ (n + 1)^4 + \sin(n + 1) }{ 2^{n + 1} }
+ \frac{ (n + 1)^4 + \sin(n + 1) }{ 2^{n + 1} }
 }{
-    \frac{n^4 + \sin n}{2^n}
+ \frac{n^4 + \sin n}{2^n}
 }
 \\ & = \lim_{n \to \infin}
 \frac{
-    \frac{ \Omicron(n^4) }{ \Omicron(2^{n + 1}) }
+ \frac{ \Omicron(n^4) }{ \Omicron(2^{n + 1}) }
 }{
-    \frac{ \Omicron(n^4) }{\Omicron(2^n)}
+ \frac{ \Omicron(n^4) }{\Omicron(2^n)}
 }
 \\ & = \frac 1 2
 \\ & < 1
@@ -69,13 +59,13 @@
    \begin{align*}
 \lim_{n \to \infin} \frac{|a_{n + 1}| }{ |a_n|} 
 & = \lim_{n \to \infin} \frac{
-    \frac{(n + 1)!}{ (n + 1)^{n + 1}}
+ \frac{(n + 1)!}{ (n + 1)^{n + 1}}
 }{
-    \frac{n!}{n^n}
+ \frac{n!}{n^n}
 }
 \\ & = \lim_{n \to \infin} \left(
 \frac{n}{ n + 1 }
- \right)^n
+\right)^n
 \end{align*}
    $$
    
@@ -92,7 +82,9 @@
    
    For $n \ge 10 > \mathrm e^2$ , $a_n$ is monotonously decreasing and therefore convergent by Alternating Series Test.
    
-   (v) Convergent for being less than $(1 - \frac 1 n)^n$ which is proved convergent to $\frac 1 {\mathrm e}$ in problem 1.
+   (v) $\frac{1}{n}\sin(\frac 1 n) < \frac{1}{n^2}$ and therefore convergent.
+   
+   (vi) TODO: Convergent for being less than $(1 - \frac 1 n)^n$ which is proved convergent to $\frac 1 {\mathrm e}$ in problem 1.
 
 3. (i) True. Obviously $a_n < \frac{1}{n^2}$ for sufficiently large $n$ , otherwise $n^2 a_n$ does not tend to $0$ . Then $\sum a_n$ converges because $\sum \frac{1}{n^2}$ converges. $\square$ 
    
@@ -119,7 +111,7 @@
 \sum_{n = 2}^\infin \frac{1}{n^2 - 1} 
 & = \sum_{n = 2}^\infin \frac{1}{(n + 1) (n - 1)}
 \\ & = \sum_{n = 2}^\infin \frac 1 2 \left(
-    \frac{1}{n - 1} - \frac { 1} {n + 1}
+ \frac{1}{n - 1} - \frac { 1} {n + 1}
 \right)
 \\ & = \frac{1}{2} ( \frac 1 1 + \frac 1 2 )
 \\ & = \frac 3 4
@@ -144,12 +136,40 @@
    
    (iii)
    
-   TODO
-
-5. (i) 
-   
-   
-   
    a
 
-6. 
+5. (i) When $\alpha = 1$ this is half of the harmonic series, and when $\alpha<1$ it is greater, thus diverges. When $\alpha > 1$ ,
+   
+   $$
+   \sum_{n=1}^\infin \frac{1}{n ^ \alpha ( 1 + \alpha ^{-n}) } <
+\sum_{n=1}^\infin \frac{1}{n ^ \alpha  }
+   $$
+   
+   And the series converges because the p-series $\sum \frac{1}{n^\alpha}$ converges.
+   
+   (ii) Ignoring the first term, and we have $\ln n > 1$ for all $n \ge 3$ . When $\alpha > 1$ , the series converges because it is strictly less than $\sum \frac{1}{n^\alpha}$ . When $\alpha < 1$ , $n^{1-\alpha} > (\ln n) ^ \beta$ for sufficiently large $n$ and the series is greater than the harmonic series, thus divergent.
+   
+   When $\alpha = 1$ ,
+   
+   $$
+   \begin{align*}
+\int_2^\infin \frac{1}{ x (\ln x)^\beta } \mathrm d x
+& = \ln x \times \frac{1}{(\ln x)^\beta } \big | _2^\infin -
+\int_{2}^\infin \ln x\times
+\frac{-\beta}{(\ln x)^{\beta + 1} } \times \frac 1 x \mathrm d x
+\\ & = \frac{1}{(\ln x)^{\beta - 1} } \big | _2^\infin + \beta
+\int_2^\infin \frac{1}{ x (\ln x)^\beta } \mathrm d x
+\end{align*}
+   $$
+   
+   Let $I = I = \int_2^\infin \frac{1}{ x (\ln x)^\beta } \mathrm d x$ .
+   
+   If $\beta < 1$ , $\frac{1}{(\ln x)^{\beta - 1} } \big | _2^\infin$ tends to infinity and the integral diverges.
+   
+   If $\beta = 1$ , $I = I - 1$ and the integral diverges.
+   
+   If $\beta > 1$ , $(1-\beta) I = -\frac{1}{(\ln 2)^{\beta - 1} }$ and the integral converges.
+   
+   Therefore, the series converges iff. $\alpha > 1$ or $\alpha = 1$ and $\beta > 1$ .
+
+6. a
