@@ -102,7 +102,7 @@
    
    Then $\sum a_n$ converges absolutely to $1$ but $|a_n| > \frac 1 n$ $\forall n = 2^m$ . 
    
-   (vi) True. $(a_n)$ does not have infinite $0$ s for otherwise $\frac{a_n}{b_n} \to 1$ is impossible. Choose a tail of $(a_n)$ without $0$ . Since $\frac{a_n}{b_n} \to 1$ and $a_n \ne 0$ then, $\frac{b_n}{a_n} \to 1$ and $\sum b_n = \sum (a_n \times \frac{b_n}{a_n} )$ converges. $\square$ 
+   (vi) False. Let $a_n = \frac{(-1)^n}{n}$ , $b_n = a_n + \frac{1}{n\ln n}$ .
 
 4. (i)
    
