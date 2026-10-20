@@ -34,15 +34,15 @@
    \begin{align*}
 \lim_{n \to \infin} \frac{|a_{n+1}|}{ |a_n| }
 & = \lim_{n \to \infin} \frac{
- \frac{ (n + 1)^4 + \sin(n + 1) }{ 2^{n + 1} }
+\frac{ (n + 1)^4 + \sin(n + 1) }{ 2^{n + 1} }
 }{
- \frac{n^4 + \sin n}{2^n}
+\frac{n^4 + \sin n}{2^n}
 }
 \\ & = \lim_{n \to \infin}
 \frac{
- \frac{ \Omicron(n^4) }{ \Omicron(2^{n + 1}) }
+\frac{ \Omicron(n^4) }{ \Omicron(2^{n + 1}) }
 }{
- \frac{ \Omicron(n^4) }{\Omicron(2^n)}
+\frac{ \Omicron(n^4) }{\Omicron(2^n)}
 }
 \\ & = \frac 1 2
 \\ & < 1
@@ -59,9 +59,9 @@
    \begin{align*}
 \lim_{n \to \infin} \frac{|a_{n + 1}| }{ |a_n|} 
 & = \lim_{n \to \infin} \frac{
- \frac{(n + 1)!}{ (n + 1)^{n + 1}}
+\frac{(n + 1)!}{ (n + 1)^{n + 1}}
 }{
- \frac{n!}{n^n}
+\frac{n!}{n^n}
 }
 \\ & = \lim_{n \to \infin} \left(
 \frac{n}{ n + 1 }
@@ -88,7 +88,7 @@
 
 3. (i) True. Obviously $a_n < \frac{1}{n^2}$ for sufficiently large $n$ , otherwise $n^2 a_n$ does not tend to $0$ . Then $\sum a_n$ converges because $\sum \frac{1}{n^2}$ converges. $\square$ 
    
-   (ii) TODO
+   (ii) False. $\sum\frac{1}{n \ln n}$ diverges.
    
    (iii) False. $\sum \frac{ (-1)^{n}}{ \sqrt{n + 1} }$ converges by Alternating Series Test, but the square is harmonic series and diverges.
    
@@ -102,7 +102,7 @@
    
    Then $\sum a_n$ converges absolutely to $1$ but $|a_n| > \frac 1 n$ $\forall n = 2^m$ . 
    
-   (vi) TODO
+   (vi) True. $(a_n)$ does not have infinite $0$ s for otherwise $\frac{a_n}{b_n} \to 1$ is impossible. Choose a tail of $(a_n)$ without $0$ . Since $\frac{a_n}{b_n} \to 1$ and $a_n \ne 0$ then, $\frac{b_n}{a_n} \to 1$ and $\sum b_n = \sum (a_n \times \frac{b_n}{a_n} )$ converges. $\square$ 
 
 4. (i)
    
@@ -111,7 +111,7 @@
 \sum_{n = 2}^\infin \frac{1}{n^2 - 1} 
 & = \sum_{n = 2}^\infin \frac{1}{(n + 1) (n - 1)}
 \\ & = \sum_{n = 2}^\infin \frac 1 2 \left(
- \frac{1}{n - 1} - \frac { 1} {n + 1}
+\frac{1}{n - 1} - \frac { 1} {n + 1}
 \right)
 \\ & = \frac{1}{2} ( \frac 1 1 + \frac 1 2 )
 \\ & = \frac 3 4
@@ -172,4 +172,81 @@
    
    Therefore, the series converges iff. $\alpha > 1$ or $\alpha = 1$ and $\beta > 1$ .
 
-6. a
+6. Because
+   
+   $$
+   \begin{align*}
+\gamma_n & = \sum_{k = 1}^ n \frac 1 k - \ln n
+\\ & = \sum_{k = 1}^ n \frac 1 k - \ln x \big| ^n_1
+\\ & = \sum_{k = 1}^ n \frac 1 k -
+\int_1^n \frac 1 x \mathrm d x
+\\ & > \sum_{k = 1}^ n \frac 1 k -
+\int_1^{n + 1} \frac 1 x \mathrm d x
+\\ & = \sum_{k = 1}^n \left(
+\frac 1 k - \int_k^{k + 1} \frac 1 x \mathrm d x
+\right)
+\\ & > \sum_{k = 1}^n \left(
+\frac 1 k - \int_k^{k + 1} \frac 1 k \mathrm d x
+\right)
+\\ & = 0
+\end{align*}
+   $$
+   
+   And
+   
+   $$
+   \begin{align*}
+\gamma_{n + 1} - \gamma_n 
+&= \frac{1}{n + 1} - \ln ( n + 1) + \ln n
+\\ & = \frac{1}{n + 1} - \ln x \big | _n ^{n + 1}
+\\ & = \frac{1}{n + 1} - \int_n^{n + 1} \frac 1 x \mathrm d x
+\\ & < \frac{1}{n + 1} - \int_n^{n + 1} \frac 1 {n + 1} \mathrm d x
+\\ & = 0
+\end{align*}
+   $$
+   
+   Therefore $0 <\gamma_{n + 1} < \gamma_n$ , and $(\gamma_n)$ converges because it is bounded and monotonous.
+   
+   $$
+   \begin{align*}
+t_{2n}  &= \sum_{k = 1}^{2n} \frac{(-1)^{k - 1} }{k}
+\\ & = \sum_{k = 1}^{2n} \frac 1 k - 
+2 \sum_{k = 1}^ n \frac{1}{2k}
+\\ & = \gamma_{2n} + \ln(2n) - \gamma_n  - \ln n
+\\ & = \gamma_{2n} - \gamma_n + \ln 2
+\end{align*}
+   $$
+   
+   $$
+   \begin{align*}
+\sum_{r = 1}^\infin \frac{(-1)^{k - 1} }{k} &= \lim_{n \to \infin}
+t_{2n}
+\\ & = \lim_{n \to \infin} (\gamma_{2n} - \gamma_n + \ln 2)
+\\ & = \ln 2 +
+\lim_{n \to \infin} (\gamma_{2n} - \gamma_n)
+\end{align*}
+   $$
+   
+   And because $(\gamma_n)$ is Cauchy, $\lim_{n \to \infin} (\gamma_{2n} - \gamma_n) = 0$ .
+   
+   Let $s_n$ be the partial sum to $n$ .
+   
+   $$
+   \begin{align*}
+s_{4n} & = \sum_{i = 0}^{n - 1}
+\left( \frac 1 {6i + 1} + \frac 1 {6i + 3} + 
+\frac 1 {6i + 5} - \frac{1}{2i + 2} \right)
+\\ & = t_{4n} + \sum_{i = n + 1}^{2n} \frac{1}{2i}
+\\ & = t_{4n} + \frac 1 2 (\gamma_{2n} + \ln(2n) - 
+\gamma_n -\ln n )
+\\ & = t_{4n} + \frac 1 2 t_{2n}
+\end{align*}
+   $$
+   
+   Therefore,
+   
+   $$
+   \lim_{n \to \infin} s_{4n} = \lim_{n \to \infin}
+\left( t_{4n} + \frac 1 2 t_{2n} \right)
+= \frac 3 2 \ln 2
+   $$
