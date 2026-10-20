@@ -1,0 +1,155 @@
++++
+# TOML Frontmatter
++++
+
+# Analysis I — Sheet 6
+
+1. Because
+   
+   $$
+   \lim_{n \to \infin} \frac{ \left(1 - \frac 1 n \right)^n }
+{ \left( 1 + \frac 1 n \right)^n } = \lim_{n \to \infin}
+\left( \frac{n-1}{n+1} \right)^ n = 0
+   $$
+   
+   And $(1 + \frac 1 n)^n$ converges, so is $( 1- \frac 1 n) ^n$ .
+   
+   Therefore,
+   
+   $$
+   \begin{align*}
+\lim_{n \to \infin} \left( 1 - \frac 1 n \right)^n
+\lim_{n \to \infin} \left( 1 + \frac 1 n \right)^n
+&= \lim_{n \to \infin}
+\left(  \left( 1 - \frac 1 n \right)
+ \left( 1 + \frac 1 n \right)
+ \right)^n
+\\ & = \lim_{n \to \infin} \left( 1- \frac 1 {n^2} \right)^n
+\end{align*}
+   $$
+   
+   Obviously this is less than $1$ . Also, by Bernoulli's inequality,
+   
+   $$
+   \lim_{n \to \infin} \left( 1 - \frac 1 {n^2} \right)^n
+\ge \lim_{n \to \infin } \left( 1 - \frac{1}{n^2} \times n \right)
+= 1
+   $$
+   
+   Therefore the limit is $1$ , and $\lim_{n \to \infin} ( 1 - \frac 1 n) ^ n = \frac{1}{ \lim_{n \to \infin} (1 + \frac 1 n)^n  } = \frac{1}{\mathrm e}$ . $\square$ 
+
+2. (i) Convergent.
+   
+   $$
+   \begin{align*}
+\lim_{n \to \infin} \frac{|a_{n+1}|}{ |a_n| }
+& = \lim_{n \to \infin} \frac{
+    \frac{ (n + 1)^4 + \sin(n + 1) }{ 2^{n + 1} }
+}{
+    \frac{n^4 + \sin n}{2^n}
+}
+\\ & = \lim_{n \to \infin}
+\frac{
+    \frac{ \Omicron(n^4) }{ \Omicron(2^{n + 1}) }
+}{
+    \frac{ \Omicron(n^4) }{\Omicron(2^n)}
+}
+\\ & = \frac 1 2
+\\ & < 1
+\end{align*}
+   $$
+   
+   Therefore convergent by Ratio Test.
+   
+   (ii) Divergent. Because $\frac{n + 2^n}{n2^n} = \frac 1 n + \frac {1}{2^n}$ the series is harmonic series plus some non-negative terms and the harmonic series diverges.
+   
+   (iii) Convergent.
+   
+   $$
+   \begin{align*}
+\lim_{n \to \infin} \frac{|a_{n + 1}| }{ |a_n|} 
+& = \lim_{n \to \infin} \frac{
+    \frac{(n + 1)!}{ (n + 1)^{n + 1}}
+}{
+    \frac{n!}{n^n}
+}
+\\ & = \lim_{n \to \infin} \left(
+\frac{n}{ n + 1 }
+ \right)^n
+\end{align*}
+   $$
+   
+   By problem 1 the ratio converges to $\frac 1 {\mathrm e} < 1$ , therefore $\sum a_n$ converges.
+   
+   (iv) Convergent.
+   
+   $$
+   \left| \frac{\ln n}{\sqrt n} \right|' = 
+\frac{ \frac 1 n \sqrt n -\frac{1}{2 \sqrt n} \ln n }
+{n}
+= \frac{2 - \ln n}{2n \sqrt n}
+   $$
+   
+   For $n \ge 10 > \mathrm e^2$ , $a_n$ is monotonously decreasing and therefore convergent by Alternating Series Test.
+   
+   (v) Convergent for being less than $(1 - \frac 1 n)^n$ which is proved convergent to $\frac 1 {\mathrm e}$ in problem 1.
+
+3. (i) True. Obviously $a_n < \frac{1}{n^2}$ for sufficiently large $n$ , otherwise $n^2 a_n$ does not tend to $0$ . Then $\sum a_n$ converges because $\sum \frac{1}{n^2}$ converges. $\square$ 
+   
+   (ii) TODO
+   
+   (iii) False. $\sum \frac{ (-1)^{n}}{ \sqrt{n + 1} }$ converges by Alternating Series Test, but the square is harmonic series and diverges.
+   
+   (iv) True. Obviously $|a_n| < 1$ for sufficiently large $n$ (otherwise $\sum |a_n|$ does not converge), then $\sum {a_n}^2$ converges because $|{a_n}^2| < |a_n|$ . $\square$ 
+   
+   (v) False. Define
+   
+   $$
+   a_n = \begin{cases} 2^{1-m} & n = 2^m \\ 0 & \text{otherwise} \end{cases}
+   $$
+   
+   Then $\sum a_n$ converges absolutely to $1$ but $|a_n| > \frac 1 n$ $\forall n = 2^m$ . 
+   
+   (vi) TODO
+
+4. (i)
+   
+   $$
+   \begin{align*}
+\sum_{n = 2}^\infin \frac{1}{n^2 - 1} 
+& = \sum_{n = 2}^\infin \frac{1}{(n + 1) (n - 1)}
+\\ & = \sum_{n = 2}^\infin \frac 1 2 \left(
+    \frac{1}{n - 1} - \frac { 1} {n + 1}
+\right)
+\\ & = \frac{1}{2} ( \frac 1 1 + \frac 1 2 )
+\\ & = \frac 3 4
+\end{align*}
+   $$
+   
+   (ii)
+   
+   $$
+   \begin{align*}
+\sum_{n=0}^\infin \frac { \cos n} {2^n}
+& = \sum_{n = 0}^\infin \frac{ \operatorname{Re} \exp(n\mathrm i) }{2^n}
+\\ & =
+\operatorname{Re} \sum_{n = 0}^\infin 
+\left( \frac{\exp \mathrm i}{2} \right)^n
+\\ & = \operatorname{Re} \frac{1}{ 1 - \frac {\exp \mathrm i} 2 }
+\\ & = \operatorname{Re}
+\frac {1}{ 1 - \frac 1 2(\cos 1 + \mathrm i \sin 1) }
+\\ & = \frac{1 - \frac 1 2 \cos 1}{\frac 5 4 - \cos 1}
+\end{align*}
+   $$
+   
+   (iii)
+   
+   TODO
+
+5. (i) 
+   
+   
+   
+   a
+
+6. 
