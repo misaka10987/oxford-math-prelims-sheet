@@ -136,9 +136,21 @@
    
    (iii)
    
-   a
+   $$
+   \begin{align*}
+\sum_{n = 0}^\infin \frac{n^2 + 7n + 11}{n!}
+& = \sum_{n = 0}^\infin \frac{n^2}{ n! } +
+7\sum_{n = 0}^\infin \frac{n}{n!} + 
+11\sum_{n = 0}^\infin \frac 1 {n!}
+\\ & = \sum_{n = 1}^\infin \frac{n}{(n-1)! } +
+7\sum_{n = 1}^\infin \frac{1}{(n-1)! } + 11 \mathrm e
+\\ & = \sum_{n = 1}^\infin \frac{n-1}{(n-1)! } +
+\sum_{n = 1}^\infin \frac{1}{(n-1)! } + 18 \mathrm e
+\\ & = 20 \mathrm e
+\end{align*}
+   $$
 
-5. (i) When $\alpha = 1$ this is half of the harmonic series, and when $\alpha<1$ it is greater, thus diverges. When $\alpha > 1$ ,
+5. (i) When $\alpha = 1$ this is half of the harmonic series. When $\alpha > 1$ ,
    
    $$
    \sum_{n=1}^\infin \frac{1}{n ^ \alpha ( 1 + \alpha ^{-n}) } <
@@ -146,6 +158,15 @@
    $$
    
    And the series converges because the p-series $\sum \frac{1}{n^\alpha}$ converges.
+   
+   When $\alpha < 1$ ,
+   
+   $$
+   \sum_{n=1}^\infin \frac{1}{n ^ \alpha ( 1 + \alpha ^{-n}) } <
+\sum_{n=1}^\infin \frac{1}{ \alpha^{-n} }
+   $$
+   
+   And the series converges because the geometric series $\sum \frac 1{\alpha^{-n} }$ converges.
    
    (ii) Ignoring the first term, and we have $\ln n > 1$ for all $n \ge 3$ . When $\alpha > 1$ , the series converges because it is strictly less than $\sum \frac{1}{n^\alpha}$ . When $\alpha < 1$ , $n^{1-\alpha} > (\ln n) ^ \beta$ for sufficiently large $n$ and the series is greater than the harmonic series, thus divergent.
    
