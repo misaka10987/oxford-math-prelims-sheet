@@ -1,5 +1,6 @@
 +++
 # TOML Frontmatter
+completed = 2026-10-20
 +++
 
 # Analysis I — Sheet 5
@@ -51,9 +52,19 @@ s_{2m} - s_{2n}
    
    As for $(x_n y_n)$ , for $\varepsilon > 0$ , let $N = \max(\Epsilon'_{\sqrt \varepsilon}(x) , \Epsilon'_{\sqrt \varepsilon}(y))$ and do the same as $(x_n + y_n)$ .
    
-   Assume $y_n \to L > 0$ . Given $\varepsilon > 0$ , 
+   As for $(\frac 1 {y_n})$ , assume $y_n \to L >0$ as the procedure is essentially the same for negative ones by setting $L$ to $-L$ . For given $\varepsilon$ , let $e = \min(\frac{L}{2}, \frac{L^2 \varepsilon}{16})$ and $N = \Epsilon_e (y)$ . Then $\forall m \ge n \ge N$ , $y_m , y_n \in (L - \frac{ L^2\varepsilon}{4}, L + \frac{ L^2\varepsilon}{4})$ and $y_m, y_n \in (\frac L 2, \frac {3L} 2)$ . Therefore,
    
-   TODO
+   $$
+   \begin{align*}
+\left| \frac{1}{y_m} - \frac{1}{y_n} \right|
+& = \frac{|y_n - y_m|}{|y_m y_n|}
+\\ & < \frac{ \frac{L^2\varepsilon}{8} }{ \frac{L^2}{4} }
+\\ & = \frac \varepsilon 2
+\\ & < \varepsilon
+\end{align*}
+   $$
+   
+   Thus $(\frac {1}{y_n})$ is Cauchy.
 
 3. $$
    \begin{align*}
@@ -129,7 +140,7 @@ p & \text{prime}\\
 \\ &= \frac 1 6 | {x_n^5} - { x_{n-1}^5 } |
 \\ &= \frac 1 6 |x_n - x_{n - 1}| \left| \sum_{i=0}^4 {x_n}^i
 {x_{n-1} }^{4-i}
- \right|
+\right|
 \\ & \le \frac 5 6 |x_n - x_{n - 1}|
 \end{align*}
    $$
@@ -154,7 +165,7 @@ p & \text{prime}\\
 & = \frac 1 3 \left( \frac 5 6 \right)^{ m - 1 } 
 \frac{ 1- \left( \frac 5 6 \right)^{n-m} }{ 1 - \frac 5 6 }
 \\ & = \frac 1 3 \left( \frac 5 6 \right)^{ m - 1 } 6
- \left(   1- \left( \frac 5 6 \right)^{n-m}\right)
+\left(   1- \left( \frac 5 6 \right)^{n-m}\right)
 \\ \le 2\left( \frac 5 6 \right)^{ m - 1 } \space \square
 \end{align*}
    $$
