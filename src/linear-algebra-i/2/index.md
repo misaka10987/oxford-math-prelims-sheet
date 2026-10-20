@@ -91,11 +91,12 @@ A\left( 1_4 - \frac 2 9 J_4  \right) &=
    $$
    \begin{pmatrix}1 & 1 & 0\\
 1 & 0 & 1\\
+
 0 & 1 & 1\end{pmatrix}^{-1}
-= 
+=
+
 \begin{pmatrix}\frac{1}{2} & \frac{1}{2} &-\frac{1}{2}\\
-\frac{1}{2} &-\frac{1}{2}& \frac{1}{2}\\
-- \frac{1}{2}  & \frac{1}{2} & \frac{1}{2}
+\frac{1}{2} &-\frac{1}{2}& \frac{1}{2}\\ - \frac{1}{2}  & \frac{1}{2} & \frac{1}{2}
 \end{pmatrix}
    $$
    
@@ -103,8 +104,10 @@ A\left( 1_4 - \frac 2 9 J_4  \right) &=
    \begin{pmatrix}1 &-1 & 0 & 0\\
 1 & 0 & -1 & 0\\
 1 & 0 & 0 & -1\\
+
 0 & 1 & 1 & 1\end{pmatrix}^{-1}
 =
+
 \begin{pmatrix}
 \frac{1}{3} & \frac{1}{3} & \frac{1}{3} & \frac{1}{3}\\
 -\frac{2}{3} & \frac{1}{3} & \frac{1}{3} & \frac{1}{3}\\
