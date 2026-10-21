@@ -1,5 +1,6 @@
 +++
 # TOML Frontmatter
+completed = 2026-10-21
 +++
 
 # Linear Algebra I — Sheet 2
@@ -67,7 +68,7 @@ A\left( 1_4 - \frac 2 9 J_4  \right) &=
    
    Therefore $(AC)^\mathrm T = C^\mathrm T A^\mathrm T$ because they have the same entries. $\square$ 
    
-    (iii) By (ii), $A^\mathrm T (A^{-1})^\mathrm T = (A^{-1}A)^\mathrm T = 1_n$ , $(A^{-1})^\mathrm T A^\mathrm T = (AA^{-1})^\mathrm T = 1_m$ , therefore the inverse is defined and $(A^\mathrm T)^{-1} = (A^{-1})^\mathrm T$ .
+    (iii) By (ii), $A^\mathrm T (A^{-1})^\mathrm T = (A^{-1}A)^\mathrm T = 1_n$ , $(A^{-1})^\mathrm T A^\mathrm T = (AA^{-1})^\mathrm T = 1_m$ , therefore the inverse is defined and $(A^\mathrm T)^{-1} = (A^{-1})^\mathrm T$ . $\square$ 
 
 4. $$
    \begin{align*}
@@ -91,10 +92,8 @@ A\left( 1_4 - \frac 2 9 J_4  \right) &=
    $$
    \begin{pmatrix}1 & 1 & 0\\
 1 & 0 & 1\\
-
 0 & 1 & 1\end{pmatrix}^{-1}
 =
-
 \begin{pmatrix}\frac{1}{2} & \frac{1}{2} &-\frac{1}{2}\\
 \frac{1}{2} &-\frac{1}{2}& \frac{1}{2}\\ - \frac{1}{2}  & \frac{1}{2} & \frac{1}{2}
 \end{pmatrix}
@@ -104,21 +103,18 @@ A\left( 1_4 - \frac 2 9 J_4  \right) &=
    \begin{pmatrix}1 &-1 & 0 & 0\\
 1 & 0 & -1 & 0\\
 1 & 0 & 0 & -1\\
-
 0 & 1 & 1 & 1\end{pmatrix}^{-1}
 =
-
 \begin{pmatrix}
-\frac{1}{3} & \frac{1}{3} & \frac{1}{3} & \frac{1}{3}\\
--\frac{2}{3} & \frac{1}{3} & \frac{1}{3} & \frac{1}{3}\\
+\frac{1}{3} & \frac{1}{3} & \frac{1}{3} & \frac{1}{3}\\ -\frac{2}{3} & \frac{1}{3} & \frac{1}{3} & \frac{1}{3}\\
 \frac{1}{3} & -\frac{2}{3}  & \frac{1}{3} & \frac{1}{3}\\
 \frac{1}{3} & \frac{1}{3} & -\frac{2}{3}  & \frac{1}{3}
 \end{pmatrix}
    $$
 
-6. (i) Every elementary row operation is invertible (swapping by swapping back, $\mathbf r_1 \mapsto \mathbf r_1 + \lambda \mathbf r_2$ by $\mathbf r_1 \mapsto \mathbf r_1 - \lambda \mathbf r_2$ , and $\mathbf r \mapsto \lambda \mathbf r$ by $\mathbf r \mapsto \frac 1 \lambda \mathbf r$ ).
+6. (i) EROs on matrices form a group action since the composite is also ERO and every ERO is invertible (cancel a swapping by swapping back; cancel $\mathbf r_1 \mapsto \mathbf r_1 + \lambda \mathbf r_2$ by $\mathbf r_1 \mapsto \mathbf r_1 - \lambda \mathbf r_2$ ; and cancel $\mathbf r \mapsto \lambda \mathbf r$ by $\mathbf r \mapsto \frac 1 \lambda \mathbf r$ ).
    
-   Therefore, have EROs $f_A : A \to E$ and $f_B : B \to E$ , $g : A \to B = {f_B}^{-1} \circ f_A$ is also ERO. TODO
+   Therefore, have EROs $f,g$ s.t. $fA = gB = E$ , then $g^{-1}f$ is an ERO that sends $A$ to $B$ . $\square$ 
    
    (ii) Use S, M, and A short for EROs as described in the lecture notes.
    
