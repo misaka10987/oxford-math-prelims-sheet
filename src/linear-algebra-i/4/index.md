@@ -1,5 +1,6 @@
 +++
 # TOML Frontmatter
+completed = 2026-10-21
 +++
 
 # Linear Algebra I — Sheet 4
@@ -61,4 +62,14 @@
    
    (c) Let $X = V / W \oplus U$ . Obviously $W + X = V$ . $W \cap X = U$ because for every $\mathbf v + \mathbf u \in X$ , $\mathbf v \in V/W$ , $\mathbf u \in U$ , we have $\mathbf v \notin W$ (if nonzero) and $\mathbf u \in W$ , so $\mathbf v + \mathbf u \in W$ iff. $\mathbf v = 0$ then $\mathbf v + \mathbf u \in U$ . $\square$ 
 
-6. (a) 
+6. (a) The forward direction of the proof follows from the definition of direct sum.
+   
+   Have $v = u + w$ , assume $U \cap W = X \ne \{ \mathbf 0 \}$ . Then let $x\in X$ be a nonzero vector, and $v = (u + x) + (w - x)$ will be another decomposition, which gives contradiction. $\square$ 
+   
+   (b)
+   
+   (i) False. $W \subseteq U$ and internal direct sum is undefined. (The statement is true if interpreted as external direct sum.)
+   
+   (ii) True. $W \cap U = \{ \mathbf 0 \}$ and $\dim W + \dim U = 1 + 2 = 3$ . $\square$ 
+   
+   (iii) False. $\dim W + \dim U = 2 + 2 = 4$ .
