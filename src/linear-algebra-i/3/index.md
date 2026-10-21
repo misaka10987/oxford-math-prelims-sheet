@@ -21,7 +21,7 @@ completed = 2026-10-21
    
    - The additive unit is constant zero sequence, and inverse is done by negation of $\R$ on each term.
    
-   Define scalar multiplication $x \bullet (u_n) = (xu_n)$ . It is easy to verify this is closed.
+   Define scalar multiplication $x \bullet (u_n) = (xu_n)$ .
    
    - $$
      \begin{align*}
