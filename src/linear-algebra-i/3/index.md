@@ -1,5 +1,6 @@
 +++
 # TOML Frontmatter
+completed = 2026-10-21
 +++
 
 # Linear Algebra I — Sheet 3
@@ -128,4 +129,20 @@ x \bullet (u_n + v_n) & = (x (u_n+v_n))
    
    For $n \ge 2$ , Let $\mathbf v_m \in \R^n$ be the vector where the $m$ -th component is $n-1$ and all other components are $-1$ , then $\left\{ \mathbf v_i \mid 1 \le i \le n \right\}$ is a basis.
    
-   (ii) Obviously $\mathbf 0 \in V_2$ . $\forall \mathbf v, \mathbf w \in V_2$ .
+   (ii) Obviously $\mathbf 0 \in V_2$ . $\forall \mathbf v, \mathbf w \in V_2$ ,
+   
+   $$
+   (\mathbf v + \mathbf w)_{i,j} = \mathbf v_{i,j} + \mathbf w_{i,j}
+= \mathbf v_{j,i} + \mathbf w_{j,i} = (\mathbf v + \mathbf w)_{j,i}
+   $$
+   
+   $$
+   (c \mathbf v)_{i,j} = c\mathbf v_{i,j}
+= c\mathbf v_{j,i} = (c\mathbf v)_{j,i}
+   $$
+   
+   Therefore $V_2$ is closed under vector addition and scalar multiplication, thus it is a subspace.
+   
+   Let $M_{i,j} \in \R^{n \times n}$ be the matrix where the entries $(i,j)$ and $(j,i)$ are $1$ and $0$ elsewhere. Then $\left\{ M_{i,j} \mid 1 \le i \le j \le n \right\}$ is a basis.
+   
+   (iii) $\mathbf 0 \in V_3$ and closure under addition and multiplication can be verified similar to (ii). Let $M_{i,j}$ be the matrix where the entry $(i,j)$ is $1$ , $(j,i)$ is $-1$ , and $0$ elsewhere, then $\left\{ M_{i,j} \mid 1 \le i < j < n \right\}$ is a basis for $n \ge 2$ , $\left \{ (0) \right\}$ is a basis for $n = 1$ , and $\left\{ * \right\}$ is a basis for $n = 0$ .
