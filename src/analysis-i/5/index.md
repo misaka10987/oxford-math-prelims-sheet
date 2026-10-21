@@ -64,7 +64,7 @@ s_{2m} - s_{2n}
 \end{align*}
    $$
    
-   Thus $(\frac {1}{y_n})$ is Cauchy.
+   Thus $(\frac {1}{y_n})$ is Cauchy. $\square$ 
 
 3. $$
    \begin{align*}
@@ -107,7 +107,7 @@ a_m - a_n & = \int_1^m \frac{\cos x}{x^2} \mathrm d x -
    
    $$
    c_n = \begin{cases}
-p & \text{prime}\\
+n & \text{prime}\\
 0 & \text{otherwise}
 \end{cases}
    $$
