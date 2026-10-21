@@ -84,7 +84,7 @@
    
    (v) $\frac{1}{n}\sin(\frac 1 n) < \frac{1}{n^2}$ and therefore convergent.
    
-   (vi) TODO: Convergent for being less than $(1 - \frac 1 n)^n$ which is proved convergent to $\frac 1 {\mathrm e}$ in problem 1.
+   (vi) Convergent. $\lim_{n \to \infin} \sqrt[n]{a_n} = \lim_{n \to \infin} (1 - \frac 1 n)^n = \frac 1{\mathrm e} <1$ .
 
 3. (i) True. Obviously $a_n < \frac{1}{n^2}$ for sufficiently large $n$ , otherwise $n^2 a_n$ does not tend to $0$ . Then $\sum a_n$ converges because $\sum \frac{1}{n^2}$ converges. $\square$ 
    
