@@ -5,6 +5,8 @@ completed = 2026-10-18
 
 # Analysis I — Sheet 3
 
+For convenience we use the notation $\Epsilon_\varepsilon(a)$ to express that, for a convergent sequence $(a_n)$ , given $\varepsilon > 0$ , the smallest $N \in \N$ s.t. $|a_n - \lim_{n \to \infin}a_n| < \varepsilon$ $\forall n \ge N$ , and $\Epsilon'_\varepsilon(a)$ for that of a Cauchy sequence. For a sequence $a_n \to \infin$ , let $E_\varepsilon(a)$ denote the smallest $N$ s.t. $a_n > \varepsilon$ $\forall n \ge N$ , and vice versa for $a_n \to -\infin$ .
+
 1. | Sequence                | $N$                                                 |
    | ----------------------- | --------------------------------------------------- |
    | $\frac 1 {n^2}$         | $\lceil \sqrt{\frac{1}{\varepsilon}} \rceil + 1000$ |
@@ -40,11 +42,11 @@ completed = 2026-10-18
 
 4. (i) Let $l$ and $u$ be lower and upper bound of $a_n$ . Then let $d = \max(|l|, |u|)$ .
    
-   For given $\varepsilon >0$ , let $N$ be such index that $b_n \in ( - \frac \varepsilon d, \frac \varepsilon d )$ $\forall n \ge N$ , then $a_nb_n \in (-\varepsilon, \varepsilon)$ $\forall n \ge N$ and $a_nb_n \to 0$ . $\square$ 
+   For given $\varepsilon >0$ , let $N = \Epsilon_{\frac \varepsilon d}(b)$ , then $a_nb_n \in (-\varepsilon, \varepsilon)$ $\forall n \ge N$ and $a_nb_n \to 0$ . $\square$ 
    
-   (ii) As for $\frac {b_n}{a_n} \to 0$ , for given $\varepsilon > 0$ , let $N_b$ be such index that $b_n \in (L - 1, L + 1)$ $\forall n \ge N_b$ and $N_a$ be such index that $a_n > \frac{1}{\varepsilon} \max(|L-1|, |L+1|)$ $\forall n \ge N_a$ , then $\frac{b_n}{a_n} \in (-\varepsilon, \varepsilon)$ $\forall n \ge N_a$ and $\frac{b_n}{a_n} \to 0$ .
+   (ii) As for $\frac {b_n}{a_n} \to 0$ , for given $\varepsilon > 0$ , let $N_b = \Epsilon_1(b)$ and $N_a = \Epsilon_{\frac 1 \varepsilon \max(|L-1|,|L+1|)}(a)$ , then $\frac{b_n}{a_n} \in (-\varepsilon, \varepsilon)$ $\forall n \ge \max(N_a,N_b)$ and $\frac{b_n}{a_n} \to 0$ .
    
-   As for $a_n + b_n \to \infin$ , for given $\varepsilon > 0$ , let $N_b$ be such index that $b_n > L-1$ $\forall n \ge N_b$ and $N_a$ be such index that $a_n > \varepsilon - L +1$ $\forall n \ge N_a$ , then $a_n + b_n > \varepsilon$ $\forall n \ge N_a$ and $a_n + b_n \to \infin$ . $\square$ 
+   As for $a_n + b_n \to \infin$ , for given $\varepsilon > 0$ , let $N_b = \Epsilon_1(b)$ and $N_a=\Epsilon_{\varepsilon-L+1}(a)$ , then $a_n + b_n > \varepsilon$ $\forall n \ge N_a$ and $a_n + b_n \to \infin$ . $\square$ 
 
 5. (i)
    
@@ -62,21 +64,21 @@ completed = 2026-10-18
    
    - (c) $\exist \varepsilon > 0$ s.t. $\forall N \in \N$ , $\exist n \ge N$ s.t. $a_n \le \varepsilon$ .
    
-   (iii) Let $a_n \to L$ . Let $N$ be such index that $a_n \in (L-1, L + 1)$ $\forall n \ge N$ . If $N=0$ , $a_n$ is bounded by $L-1$ and $L+1$ . Otherwise, let $S = \left \{ a_i \mid i < N \right\}$ . Let $l = \inf S$ and $u = \sup S$ since $S$ is finite and therefore bounded. Then $a_n$ is bounded by $\min(L-1, l)$ and $\max(L+1, u)$ . $\square$ 
+   (iii) Let $a_n \to L$ . Let $N = \Epsilon_1(a)$ . If $N=0$ , $a_n$ is bounded by $L-1$ and $L+1$ . Otherwise, let $S = \left \{ a_i \mid i < N \right\}$ . Let $l = \inf S$ and $u = \sup S$ since $S$ is finite and therefore bounded. Then $a_n$ is bounded by $\min(L-1, l)$ and $\max(L+1, u)$ . $\square$ 
    
    $\sin(n)$ is bounded by $(-1,1)$ but divergent.
    
-   (iv) If $a_n \to \infin$ is upper-bounded by $u$ , then let $N$ be such index that $a_n > u$ $\forall n \ge N$ , and $a_N > u$ contradicts with that $u$ is an upper bound. $\square$ 
+   (iv) If $a_n \to \infin$ is upper-bounded by $u$ , let $N = \Epsilon_{u}(a)$ and $a_N > u$ contradicts with that $u$ is an upper bound. $\square$ 
    
    $-n$ tends to $-\infin$ and is unbounded.
    
    (v) Assume $a_n \to L$ . Let $A_n := \left\{ a_i \mid i \le n \right\}$ .
    
-   - If $a_n = L$ , then $a_0$ is both the maximum and minimum.
+   - If $a_n = L$ $\forall n\in\N$ , then $a_0$ is both the maximum and minimum.
    
-   - If there exists $a_i > L$ , let $N$ be such index that $a_n \in (2L-a_i, a_i)$ $\forall n \ge N$ , then $\max A_N$ is the maximum.
+   - If there exists $a_i > L$ , $\max A_{\Epsilon_{a_i - L}(a)}$ is the maximum.
    
-   - If there exists $a_i < L$ , let $N$ be such index that $a_n \in (a_i, 2L-a_i)$ $\forall n \ge N$ , then $\min A_N$ is the minimum. $\square$ 
+   - If there exists $a_i < L$ , $\min A_{\Epsilon_{L-a_i}(a)}$ is the minimum. $\square$ 
    
    This is not true for bounded real sequences. As a counterexample, let $a_n = \tanh (-2)^n$ .
 
