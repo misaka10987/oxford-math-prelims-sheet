@@ -5,7 +5,7 @@ completed = 2026-10-18
 
 # Analysis I — Sheet 3
 
-In this sheet, for convenience, we use the notation $\Epsilon_\varepsilon(a)$ to express that, for a convergent sequence $(a_n)$ , given $\varepsilon > 0$ , the smallest $N \in \N$ s.t. $|a_n - \lim_{n \to \infin}a_n| < \varepsilon$ $\forall n \ge N$ , and $\Epsilon'_\varepsilon(a)$ for that of a Cauchy sequence. For a sequence $a_n \to \infin$ , let $E_\varepsilon(a)$ denote the smallest $N$ s.t. $a_n > \varepsilon$ $\forall n \ge N$ , and vice versa for $a_n \to -\infin$ .
+In this sheet, for convenience, we use the notation $\Epsilon_\varepsilon(a)$ to express that, for a convergent sequence $(a_n)$ , given $\varepsilon > 0$ , the smallest $N \in \N$ s.t. $|a_n - \lim_{n \to \infin}a_n| < \varepsilon$ $\forall n \ge N$ , and $\Epsilon'_\varepsilon(a)$ for that of a Cauchy sequence. For a sequence $a_n \to \infin$ , let $\Epsilon_\varepsilon(a)$ denote the smallest $N$ s.t. $a_n > \varepsilon$ $\forall n \ge N$ , and vice versa for $a_n \to -\infin$ .
 
 1. | Sequence                | $N$                                                 |
    | ----------------------- | --------------------------------------------------- |
@@ -46,7 +46,7 @@ In this sheet, for convenience, we use the notation $\Epsilon_\varepsilon(a)$ to
    
    (ii) As for $\frac {b_n}{a_n} \to 0$ , for given $\varepsilon > 0$ , let $N_b = \Epsilon_1(b)$ and $N_a = \Epsilon_{\frac 1 \varepsilon \max(|L-1|,|L+1|)}(a)$ , then $\frac{b_n}{a_n} \in (-\varepsilon, \varepsilon)$ $\forall n \ge \max(N_a,N_b)$ and $\frac{b_n}{a_n} \to 0$ .
    
-   As for $a_n + b_n \to \infin$ , for given $\varepsilon > 0$ , let $N_b = \Epsilon_1(b)$ and $N_a=\Epsilon_{\varepsilon-L+1}(a)$ , then $a_n + b_n > \varepsilon$ $\forall n \ge N_a$ and $a_n + b_n \to \infin$ . $\square$ 
+   As for $a_n + b_n \to \infin$ , for given $\varepsilon > 0$ , let $N_b = \Epsilon_1(b)$ and $N_a=\Epsilon_{\varepsilon-L+1}(a)$ , then $a_n + b_n > \varepsilon$ $\forall n \ge \max(N_a,N_b)$ and $a_n + b_n \to \infin$ . $\square$ 
 
 5. (i)
    
