@@ -5,7 +5,7 @@ completed = 2026-10-20
 
 # Analysis I — Sheet 5
 
-We use the notation $\Epsilon_\varepsilon(a)$ to express that, for a convergent sequence $(a_n)$ , given $\varepsilon > 0$ , the smallest $N \in \N$ such that $|a_n - \lim_{n \to \infin}a_n| < \varepsilon$ $\forall n \ge N$ , and $\Epsilon'_\varepsilon(a)$ for that of a Cauchy sequence.
+In this sheet, for convenience, we use the notation $\Epsilon_\varepsilon(a)$ to express that, for a convergent sequence $(a_n)$ , given $\varepsilon > 0$ , the smallest $N \in \N$ s.t. $|a_n - \lim_{n \to \infin}a_n| < \varepsilon$ $\forall n \ge N$ , and $\Epsilon'_\varepsilon(a)$ for that of a Cauchy sequence. For a sequence $a_n \to \infin$ , let $\Epsilon_\varepsilon(a)$ denote the smallest $N$ s.t. $a_n > \varepsilon$ $\forall n \ge N$ , and vice versa for $a_n \to -\infin$ .
 
 1. $\forall m,n \in \N$ , $m > n$ , we have
    
