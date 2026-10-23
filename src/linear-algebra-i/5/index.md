@@ -1,5 +1,6 @@
 +++
 # TOML Frontmatter
+completed = 2026-10-23
 +++
 
 # Linear Algebra I — Sheet 5
@@ -60,6 +61,88 @@ T(x_1 + x_2, y_1+ y_2, z_1+ z_2) &= (y_1 + y_2, z_1 + z_2, 0)
    
    Therefore $\operatorname{rank}(S + T ) \le \operatorname{rank}S + \operatorname{rank} T$ . $\square$ 
    
-   (ii) $\ker (ST) = T^{-1}(\ker S)$ .
+   (ii) Let $T' : V/\ker T \to \operatorname{im} T = \mathbf v + \ker T \mapsto T(\mathbf v)$ be a linear isomorphism.
+   
+   $$
+   \begin{align*}
+\ker(ST) &= T^{-1}(\ker S) 
+\\ &= (T^{-1}(\ker S) / \ker T) \oplus \ker T
+\\ &= (T^{-1}(\ker S \cap \operatorname{im}T) / \ker T) \oplus \ker T
+\\ &= {T'}^{-1}(\ker S \cap \operatorname{im}T) \oplus \ker T
+\\ &\cong (\ker S \cap \operatorname{im}T) \oplus \ker T
+\\ &\subseteq \ker S \oplus \ker T
+\end{align*}
+   $$
+   
+   Therefore $\operatorname{null}(ST) \le \operatorname{null}S + \operatorname{null}T$ . $\square$ 
 
-5. a
+5. (a)
+   
+   (i) $\forall \mathbf v \in V$ , let $\mathbf v = \mathbf u + \mathbf w$ where $\mathbf u \in U $ and $\mathbf w \in W$ . Then
+   
+   $$
+   Q\mathbf v = \mathbf w = \mathbf v - \mathbf u =
+\operatorname{id}_V(\mathbf v) - P\mathbf v
+   $$
+   
+   Thus $Q = \operatorname{id}_V - P$ by function extensionality. $\square$ 
+   
+   (ii) $\forall \mathbf v \in V$ , let $\mathbf v = \mathbf u + \mathbf w$ where $\mathbf u \in U$ and $\mathbf w \in W$ . Then
+   
+   $$
+   P\mathbf v = \mathbf u
+   $$
+   
+   $$
+   P^2\mathbf v = P\mathbf u = P(\mathbf 0_W+\mathbf u) = \mathbf u
+= P\mathbf v
+   $$
+   
+   Thus $P^2 = P$ by function extensionality. Similarly $Q^2 = Q$ .
+   
+   $$
+   PQ\mathbf v = P \mathbf w = P(\mathbf w + \mathbf 0_U) = \mathbf 0_U
+= \mathbf 0
+   $$
+   
+   Therefore $PQ = 0_{V \to V}$ by function extensionality. Similarly $QP = 0_{V \to V}$ and $PQ=QP=0_{V \to V}$ . $\square$ 
+   
+   (b)
+   
+   (i)
+   
+   $u \in \operatorname{im}T$ by definition.
+   
+   $$
+   Tw = T(v-Tv)=Tv-T^2v = Tv-T^2v = 0
+   $$
+   
+   Therefore $w \in \ker T$ .
+   
+   $$
+   u + w = Tv + v - Tv = v \space \square
+   $$
+   
+   (ii)
+   
+   Let $u = Tv \in \operatorname{im} T$ . Then $u \in \ker T$ iff. $Tu= 0$ , but then $u=Tv=T^2v=Tu=0$ . $\square$ 
+   
+   (iii)
+   
+   By (i) $U+W=V$ . By (ii) $U \cap W = \{0\}$ . Thus $V = U \oplus W$ by definition.
+   
+   $\forall v \in V$ , let $v = u + w$ where $u \in U$ and $w \in W$ . Then $Tv=T(u+w)=Tu$ and by definition $T$ is the projection onto $U$ along $W$ . $\square$ 
+
+6. As for (a) to (b):
+   
+   $$
+   T^2(V)=T(\operatorname{im}T)=T(\ker T) = \{0\}
+   $$
+   
+   And because $\operatorname{im}T = \ker T$ , $\operatorname{rank}T = \operatorname{null}T$ . Since $\operatorname{rank}T + \operatorname{null}T = n$ , $\operatorname{rank}T = \frac 1 2 n$ .
+   
+   As for (b) to (a):
+   
+   $\operatorname{null} T = \operatorname{rank} T$ since $\operatorname{rank}T = \frac 1 2 n$ and $\operatorname{null}T + \operatorname{rank}T = n$ .
+   
+   $T^2 = 0\implies \operatorname{im}T \subseteq \ker T$ . But their dimensions are equal and the only possible case is $\operatorname{im}T = \ker T$ . $\square$ 
