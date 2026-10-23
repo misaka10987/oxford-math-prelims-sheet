@@ -15,21 +15,21 @@ completed = 2026-10-21
    
    $U \cup W$ is a subspace iff. $U \subseteq W$ or $U \supseteq W$ .
 
-3. (a) It suffices to show that $\dim U / U \cap W = \dim W /U \cap W = 1$ .
+3. (a) It suffices to show that $\dim U / (U \cap W) = \dim W / (U \cap W) = 1$ .
    
    Obviously, both dimensions are not zero, otherwise one of $U$ and $W$ is contained in the other.
    
-   Assume $\dim U / U \cap W \ge 2$ , then because $W \cap (U / U \cap W) = \left\{ \mathbf 0 \right\}$ ,
+   Assume $\dim U / (U \cap W) \ge 2$ , then because $W \cap (U / (U \cap W) ) = \left\{ \mathbf 0 \right\}$ ,
    
    $$
    \begin{align*}
-\dim (W + U / U \cap W) &= \dim(W \oplus U / U \cap W)
-\\ & = \dim W + \dim U/U \cap W
+\dim (W + U / (U \cap W) ) &= \dim(W \oplus (U / (U \cap W) ))
+\\ & = \dim W + \dim U/(U \cap W)
 \\ & \ge n + 1
 \end{align*}
    $$
    
-   But this is impossible since $W + U / U \cap W \subseteq V$ . $\square$ 
+   But this is impossible since $W + U / (U \cap W) \subseteq V$ . $\square$ 
    
    (b) Not necessarily.
    
@@ -56,11 +56,11 @@ completed = 2026-10-21
    
    > **Lemma** $U \subsetneq W \implies \dim U < \dim W$ .
    > 
-   > **Proof** $\dim W = \dim(U \oplus W/U) = \dim U + \dim W/U$ . $\square$ 
+   > **Proof** $\dim W = \dim(U \oplus (W/U) ) = \dim U + \dim W/U$ . $\square$ 
    
    Then $\dim U_0 < \dim U_1 < \cdots < \dim U_k \le n$ . The strictly increasing chain of natural numbers below $n$ cannot be longer than $n+1$ , and the only way of length $n + 1$ is to have $\dim U_r = r$ . $\square$ 
    
-   (c) Let $X = V / W \oplus U$ . Obviously $W + X = V$ . $W \cap X = U$ because for every $\mathbf v + \mathbf u \in X$ , $\mathbf v \in V/W$ , $\mathbf u \in U$ , we have $\mathbf v \notin W$ (if nonzero) and $\mathbf u \in W$ , so $\mathbf v + \mathbf u \in W$ iff. $\mathbf v = 0$ then $\mathbf v + \mathbf u \in U$ . $\square$ 
+   (c) Let $X = (V / W) \oplus U$ . Obviously $W + X = V$ . $W \cap X = U$ because for every $\mathbf v + \mathbf u \in X$ , $\mathbf v \in V/W$ , $\mathbf u \in U$ , we have $\mathbf v \notin W$ (if nonzero) and $\mathbf u \in W$ , so $\mathbf v + \mathbf u \in W$ iff. $\mathbf v = 0$ then $\mathbf v + \mathbf u \in U$ . $\square$ 
 
 6. (a) The forward direction of the proof follows from the definition of direct sum.
    
