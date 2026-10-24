@@ -84,7 +84,7 @@ A \mathbf u_{\dim U}
 \end{align*}
    $$
    
-   Then by induction $\operatorname{rank}A^m > \frac{n(k-m)}{k}$ .But then $\operatorname{rank}A^k > 0$ which is contradiction. $\square$ 
+   Then by induction $\operatorname{rank}A^m > \frac{n(k-m)}{k}$ . But then $\operatorname{rank}A^k > 0$ which is contradiction. $\square$ 
 
 4. (a)
    
