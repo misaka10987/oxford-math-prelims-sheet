@@ -99,7 +99,9 @@ n!\lambda^k
    
    The former is around 0.36787944117144233 and the latter is 0.368, with an error of 0.0327%.
 
-5. $$
+5. By definition,
+   
+   $$
    \begin{align*}
 \mathbb E[f(X)] &= \sum_n f(n) \mathbb P(X=n)
 \\ & = \sum_n \exp(\theta n)
