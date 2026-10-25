@@ -1,10 +1,9 @@
 +++
 # TOML Frontmatter
+completed = 2026-10-25
 +++
 
-# Sheet 1
-
-## Main Course
+# Linear Algebra I — Sheet 1
 
 1. (i)
    
