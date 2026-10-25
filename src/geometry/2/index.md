@@ -1,8 +1,9 @@
 +++
 # TOML Frontmatter
+completed = 2026-10-25
 +++
 
-# Sheet 2
+# Geometry — Sheet 2
 
 1. (i) $\mathbf r \wedge (0, 1, 2) = (1, -2, 1)$ .
    
@@ -91,6 +92,96 @@ M^3 \mathbf x &= \mathbf a \wedge
 \end{align*}
    $$
 
-4. (i) 
+4. (i) Using $\mathbf u$ , $\mathbf v$ , and $\mathbf w$ as row vectors,
+   
+   $$
+   \begin{align*}
+[A\mathbf u, A \mathbf v, A \mathbf w]
+& = \begin{vmatrix}
+A \mathbf u
+\\ A \mathbf v\\
+A \mathbf w
+\end{vmatrix}
+\\ & = \left|
+A\begin{pmatrix}\mathbf u \\ 0 \\ 0\end{pmatrix} +
+A\begin{pmatrix}0 \\ \mathbf v \\ 0\end{pmatrix} +
+A\begin{pmatrix}0 \\ 0 \\ \mathbf w\end{pmatrix}
+\right|
+\\ & = \left|
+A\begin{pmatrix}\mathbf u \\ \mathbf v \\ \mathbf w\end{pmatrix}
+\right|
+\\ & = |A| \times \begin{vmatrix}
+\mathbf u \\ \mathbf v \\ \mathbf w
+\end{vmatrix}
+\\ & = |A| \times [\mathbf u, \mathbf v, \mathbf w]
+\space \square
+\end{align*}
+   $$
+   
+   (ii) Obviously the three edges on the side are $\mathbf r = a\hat k$ , $\mathbf r = \hat i + b(\hat k - \hat i)$ , and $\mathbf r = \hat j + c(\hat k-\hat j)$ . Therefore by calculation the three vertices of the triangular intersection are $(0,0,c)$ , $(0,1-c, c)$ and $(1-c, 0,c)$ . Then the area is
+   
+   $$
+   \frac 1 2 \lVert ( (0,1-c,c) - (0,0,c) )
+\wedge ( (1-c,0,c) - (0,0,c) )
+= \frac{ (1-c)^2 }{2}
+   $$
+   
+   Therefore,
+   
+   $$
+   V = \int_0^1 A \mathrm d z
+= \int_0^1 \frac{1-z^2}{2} \mathrm d z = \frac 1 3
+   $$
+   
+   (iii) The tetrahedron is $\frac 1 3$ the volume of the prism between $(0, \mathbf u, \mathbf v)$ and $(\mathbf w, \mathbf u + \mathbf w, \mathbf v+ \mathbf w)$ , which is half the volume of the parallelepiped $(\mathbf 0, \mathbf u, \mathbf v, \mathbf w, \mathbf u + \mathbf v , \mathbf v + \mathbf w, \mathbf u + \mathbf w, \mathbf u + \mathbf v + \mathbf w)$ , which has volume $|[\mathbf u, \mathbf v, \mathbf w]|$ . $\square$ 
 
-5. a
+5. (i) Let $a = \lVert \mathbf a \rVert$ , $b = \lVert \mathbf b \rVert$ , and $\theta$ be the angle between $\mathbf a$ and $\mathbf b$ . Obviously $ab\theta \ne 0$ . Then
+   
+   $$
+   \begin{align*}
+\lVert \mathbf a\rVert^2 \lVert \mathbf b \rVert^2 -
+(\mathbf a \cdot \mathbf b)^2
+&= a^2b^2-(ab\cos\theta)^2
+\\ & = a^2b^2 (1-\cos^2\theta)
+\\ & = a^2b^2 \sin^2 \theta
+\\ & = (ab\sin\theta)^2
+\\ & = \lVert \mathbf a \wedge \mathbf b \rVert^2
+\end{align*}
+   $$
+   
+   And $\lVert \mathbf a \wedge \mathbf b \rVert \ne 0$ because $\mathbf a$ and $\mathbf b$ are not parallel. $\square$ 
+   
+   (ii) $\forall \mathbf r \in \R^3$ , there is a unique decomposition $\mathbf r = a \mathbf a + b \mathbf b + c \mathbf a \wedge \mathbf b$ . Then
+   
+   $$
+   \begin{align*}
+\mathbf r \cdot \mathbf a & = 
+(a \mathbf a + b \mathbf b + c \mathbf a \wedge \mathbf b)
+\cdot \mathbf a
+\\ & = a\lVert \mathbf a \rVert + b \mathbf a \cdot \mathbf b
+\end{align*}
+   $$
+   
+   And
+   
+   $$
+   \begin{align*}
+\mathbf r \cdot \mathbf b & = 
+(a \mathbf a + b \mathbf b + c \mathbf a \wedge \mathbf b)
+\cdot \mathbf b
+\\ & = a  \mathbf a \cdot \mathbf b + b\lVert \mathbf b \rVert
+\end{align*}
+   $$
+   
+   Therefore, we have the intersection
+   
+   $$
+   \begin{cases}
+a\lVert \mathbf a \rVert + b \mathbf a \cdot \mathbf b = \alpha\\
+a  \mathbf a \cdot \mathbf b + b\lVert \mathbf b \rVert = \beta
+\end{cases}
+   $$
+   
+   And $(a,b)$ has a unique solution. Therefore the line of intersection has an equation $\mathbf r = \mathbf v + c\mathbf a \wedge \mathbf b$ and thus parallel to $\mathbf a \wedge \mathbf b$ .
+   
+   (iii) $\mathbf c \cdot (\mathbf a \wedge \mathbf b) \ne 0$ .
