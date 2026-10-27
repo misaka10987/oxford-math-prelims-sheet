@@ -119,7 +119,7 @@ A \mathbf u_{\dim U}
    
    (d) $QBP=A$ .
 
-5. (a) $A: \R^n \to \R^m$ , $\ker A \cong \R^n /\operatorname{im}A \supseteq \R^n/\R^m \cong \R^{n-m}$ . Therefore when $m<n$ there is always a non-trivial kernel of $A$ . $\square$ 
+5. (a) $\operatorname{null} A = n - \operatorname{rank}A = n - \dim \operatorname{im}A \ge n - \dim \R^m \ge 1$ . Therefore when $m<n$ there is always a non-trivial kernel of $A$ . $\square$ 
    
    (b) 
    
