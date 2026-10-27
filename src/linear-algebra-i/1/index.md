@@ -21,7 +21,7 @@ completed = 2026-10-25
 1 & -4 & 3 \\
 3 & -5 & 2
 \end{pmatrix}^{-1} (0,0,1)
-= \left(- \frac 1 3, \frac 1 3, \frac 1 2 \right)
+= \left(0, - \frac 3 7, - \frac 4 7 \right)
    $$
    
    (ii)
@@ -116,7 +116,7 @@ z = t
    (iii)
    
    $$
-   \left \{ k \mathbf 1 \mid k \in \Z \right\}
+   \left \{ k \mathrm I_{2} \mid k \in \Z \right\}
    $$
 
 5. $$
