@@ -19,17 +19,17 @@ completed = 2026-10-21
    
    Obviously, both dimensions are not zero, otherwise one of $U$ and $W$ is contained in the other.
    
-   Assume $\dim U / (U \cap W) \ge 2$ , then because $W \cap (U / (U \cap W) ) = \left\{ \mathbf 0 \right\}$ ,
+   Let $U / (U \cap W) \cong C \subseteq V$ for a complement space $C$ . Assume $\dim C \ge 2$ , then because $W \cap C = \left\{ \mathbf 0 \right\}$ ,
    
    $$
    \begin{align*}
-\dim (W + U / (U \cap W) ) &= \dim(W \oplus (U / (U \cap W) ))
-\\ & = \dim W + \dim U/(U \cap W)
+\dim (W + C ) &= \dim(W \oplus C)
+\\ & = \dim W + \dim C
 \\ & \ge n + 1
 \end{align*}
    $$
    
-   But this is impossible since $W + U / (U \cap W) \subseteq V$ . $\square$ 
+   But this is impossible since $W + C \subseteq V$ . $\square$ 
    
    (b) Not necessarily.
    
@@ -41,7 +41,7 @@ completed = 2026-10-21
 = 1
    $$
    
-   (c) Let $B = \{ \mathbf u_i \in U \mid 1 \le i \le n - 2 \}$ be a basis of $U$ . Let $\{ \mathbf v, \mathbf w \}$ be a basis of $V /U$ . Then for all real $k \ne 0$ , $X = \langle B, \mathbf v + k \mathbf w \rangle$ satisfies $U < X < V$ . $\square$ 
+   (c) Let $B$ be a basis of $U$ . Let $V / U \cong C \subseteq V$ for a complement space $C$ and $\{ \mathbf v, \mathbf w, \cdots \}$ be a basis of $C$ . Then for all real $k \ne 0$ , $X = \langle B, \mathbf v + k \mathbf w \rangle$ satisfies $U < X < V$ . $\square$ 
 
 4. | Subspace   | Basis                                     | Dimension |
    | ---------- | ----------------------------------------- | --------- |
@@ -60,7 +60,7 @@ completed = 2026-10-21
    
    Then $\dim U_0 < \dim U_1 < \cdots < \dim U_k \le n$ . The strictly increasing chain of natural numbers below $n$ cannot be longer than $n+1$ , and the only way of length $n + 1$ is to have $\dim U_r = r$ . $\square$ 
    
-   (c) Let $X = (V / W) \oplus U$ . Obviously $W + X = V$ . $W \cap X = U$ because for every $\mathbf v + \mathbf u \in X$ , $\mathbf v \in V/W$ , $\mathbf u \in U$ , we have $\mathbf v \notin W$ (if nonzero) and $\mathbf u \in W$ , so $\mathbf v + \mathbf u \in W$ iff. $\mathbf v = 0$ then $\mathbf v + \mathbf u \in U$ . $\square$ 
+   (c) Let $V / W \cong C \subseteq V$ for a complement space $C$ and let $X = C \oplus U$ . Obviously $W + X = V$ . $W \cap X = U$ because for every $\mathbf v + \mathbf u \in X$ , $\mathbf v \in C$ , $\mathbf u \in U$ , we have $\mathbf v \notin W$ (if nonzero) and $\mathbf u \in W$ , so $\mathbf v + \mathbf u \in W$ iff. $\mathbf v = 0$ then $\mathbf v + \mathbf u \in U$ . $\square$ 
 
 6. (a) The forward direction of the proof follows from the definition of direct sum.
    
