@@ -1,5 +1,6 @@
 +++
 # TOML Frontmatter
+completed = 2026-10-27
 +++
 
 # Linear Algebra I — Sheet 7
@@ -215,12 +216,46 @@ ax + by + cz & = \langle \mathbf v , \mathbf w \rangle
 = \overline{\langle \mathbf v, \mathbf u \rangle}
        $$
    
-   - s
+   - **Positive Definite:** 
      
-     - 
+     $$
+     \langle \mathbf v, \mathbf v \rangle 
+= \sum_{i=1}^n \mathbf v_i \overline{\mathbf v_i}
+= \sum_{i=1}^n ( (\operatorname{Re}\mathbf v_i)^2 +
+(\operatorname{Im} \mathbf v_i)^2) \ge 0
+     $$
+     
+     And this is equal to zero when all the real and imaginary parts are zero, which implies $\mathbf v = \mathbf 0$ . $\square$ 
    
-   - as
+   (c) As for the subspace part, $0 \in U^\perp$ . $\forall u \in U, w_1, w_2 \in U^\perp$ ,
    
-   a
-
-7. s
+   $$
+   \langle w_1 + w_2, u \rangle = \langle w_1, u\rangle +
+\langle w_2, u \rangle = 0
+   $$
+   
+   $$
+   \langle \lambda w_1, u \rangle = \lambda\langle w_1, u \rangle
+= 0
+   $$
+   
+   Therefore a subspace.
+   
+   As for the direct sum part, let $\{u_i \mid 1 \le i \le \dim U \}$ be a basis of $U$ and $T: V \to \R^{\dim U} = v \mapsto (\langle v, u_1\rangle, \cdots, \langle v, u_n \rangle)$ . Then by the same argument in 4 (c) $\operatorname{rank} T = \dim U$ .
+   
+   Also, $\ker T = U^\perp$ because obviously $\ker T \subseteq U^\perp$ , and if $v \in \ker T$ , $\forall u \in U$ , let $u = \sum_{i=1}^{\dim U} a_i u_i$ where $a_i \in \R$ , then
+   
+   $$
+   \begin{align*}
+\langle v,u \rangle &= \overline{\langle u, v \rangle}
+\\ & = \overline{\left\langle \sum_{i=1}^{\dim U} a_i u_i,
+v \right\rangle}
+\\ & = \overline{\sum_{i=1}^{\dim U} 
+a_i\langle u_i, v \rangle}
+\\ & = 0
+\end{align*}
+   $$
+   
+   And $v \in U^\perp$ . Thus $U^\perp = \ker T$ and $\dim U^\perp = \operatorname{null}T = \dim V - \dim U$ .
+   
+   Because obviously $U \cap U^\perp = \{0\}$ , $\dim U \oplus U^\perp = \dim U + \dim U^\perp = \dim V$ and $U \oplus U^\perp = V$ . $\square$ 
