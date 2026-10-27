@@ -84,7 +84,7 @@ x \bullet (u_n + v_n) & = (x (u_n+v_n))
    
    (b) Linearly independent.
 
-5. (i) (a) If not so, there exists $abc \ne 0$ s.t. $a(u + v) + b(u - v) + c(u - 2v + w) =0$ , then $(a+b+c)u + (a-b-2c)v + cw = 0$ but $c \ne 0$ , and $\left\{ u,v,w \right\}$ will be linearly dependent.
+5. (i) (a) If not so, there exists nontrivial $a,b,c$ s.t. $a(u + v) + b(u - v) + c(u - 2v + w) =0$ , then $(a+b+c)u + (a-b-2c)v + cw = 0$ but then $a+b+c$ , $a-b-2c$ and $c$ are not all zero, and $\left\{ u,v,w \right\}$ will be linearly dependent.
    
    (b) Not necessarily.
    
@@ -123,9 +123,7 @@ x \bullet (u_n + v_n) & = (x (u_n+v_n))
    
    Therefore $V_1$ is closed under vector addition and scalar multiplication, thus it is a subspace.
    
-   For $\R^0$ , $\left\{ * \right\}$ is a basis.
-   
-   For $\R^1$ , $\left\{ (0) \right\}$ is a basis.
+   For $n=0$ or $n=1$ , the basis is $\empty$ .
    
    For $n \ge 2$ , Let $\mathbf v_m \in \R^n$ be the vector where the $m$ -th component is $n-1$ and all other components are $-1$ , then $\left\{ \mathbf v_i \mid 1 \le i \le n \right\}$ is a basis.
    
@@ -145,4 +143,4 @@ x \bullet (u_n + v_n) & = (x (u_n+v_n))
    
    Let $M_{i,j} \in \R^{n \times n}$ be the matrix where the entries $(i,j)$ and $(j,i)$ are $1$ and $0$ elsewhere. Then $\left\{ M_{i,j} \mid 1 \le i \le j \le n \right\}$ is a basis.
    
-   (iii) $\mathbf 0 \in V_3$ and closure under addition and multiplication can be verified similar to (ii). Let $M_{i,j}$ be the matrix where the entry $(i,j)$ is $1$ , $(j,i)$ is $-1$ , and $0$ elsewhere, then $\left\{ M_{i,j} \mid 1 \le i < j < n \right\}$ is a basis for $n \ge 2$ , $\left \{ (0) \right\}$ is a basis for $n = 1$ , and $\left\{ * \right\}$ is a basis for $n = 0$ .
+   (iii) $\mathbf 0 \in V_3$ and closure under addition and multiplication can be verified similar to (ii). Let $M_{i,j}$ be the matrix where the entry $(i,j)$ is $1$ , $(j,i)$ is $-1$ , and $0$ elsewhere, then $\left\{ M_{i,j} \mid 1 \le i < j < n \right\}$ is a basis for $n \ge 2$ . Again $\empty$ is a basis for $n=0$ or $n=1$ .
