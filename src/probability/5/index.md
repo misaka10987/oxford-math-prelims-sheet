@@ -10,7 +10,16 @@
    
    (b) $p_n \to \frac 1 3$ .
 
-2. TODO
+2. 12min.
+   
+   | To  | 1   | 2   | 3   | 4   | 5   | 6   |
+   | --- | --- | --- | --- | --- | --- | --- |
+   | 1   | 0   |     |     | 1   |     |     |
+   | 2   | 3   | 0   | 1   | 4   | 3   | 4   |
+   | 3   |     |     | 0   |     |     |     |
+   | 4   |     |     |     | 0   |     |     |
+   | 5   |     |     |     |     | 0   | 1   |
+   | 6   | 13  | 10  |     |     |     | 0   |
 
 3. (a) $\frac n M \times \pounds M + (1 - \frac n M) \times \pounds 0 = \pounds n$ .
    
@@ -100,18 +109,56 @@ r_n &= \mathbb P(R_n \mid \text{head}(n) )
    Solving the auxiliary equation $4\lambda^2 - 2\lambda - 1 = 0$ gives $\lambda = \frac{1 \pm \sqrt{5} }{4}$ , and the general solution is $A(\frac{1+\sqrt 5}{4})^n + B(\frac{1 - \sqrt 5}{4})^n$ . By substituting $r_0 = r_1 = 1$ we have
    
    $$
-   r_n = \frac{5 + 3 \sqrt 5}{10}(\frac{1+\sqrt 5}{4})^n + 
-\frac{5 - 3 \sqrt 5}{10}(\frac{1-\sqrt 5}{4})^n
+   r_n = \frac{5 + 3 \sqrt 5}{10}\left(\frac{1+\sqrt 5}{4}\right)^n + 
+\frac{5 - 3 \sqrt 5}{10}\left(\frac{1-\sqrt 5}{4}\right)^n
    $$
    
    And
    
    $$
-   
+   \begin{align*}
+\mathbb P(X = k) &= \mathbb P(\overline{R_n}, R_{n-1})
+\\ & = \mathbb P(\text{head}(n), \text{head}(n-1), R_{n-2})
+\\ & = \mathbb P(\text{head}(n), \text{head}(n-1), 
+\text{tail}(n-2), R_{n-3})
+\\ & = \mathbb P(\text{head}(n)) \mathbb P(\text{head}(n-1))
+\mathbb P(\text{tail}(n-2))r_{n-3}
+\\ & = \frac 1 8 r_{n-3}
+\end{align*}
    $$
    
+   (c) Let
    
+   $$
+   \begin{align*}
+G_X(s) & = \sum_{n} s^n \mathbb P(X = n)
+\\ & = \sum_{i=3}^\infin s^i \frac 1 8 r_{i-3}
+\\ & = \sum_n \frac{s^{n+3}}{8}
+\left( \frac{5 + 3 \sqrt 5}{10}\left(\frac{1+\sqrt 5}{4}\right)^{n} + 
+\frac{5 - 3 \sqrt 5}{10}\left(\frac{1-\sqrt 5}{4}\right)^{n} \right)
+\\ & = \frac{s^3}{8} \sum_n
+\left( \frac{5 + 3 \sqrt 5}{10}\left(\frac{1+\sqrt 5}{4}s\right)^{n} + 
+\frac{5 - 3 \sqrt 5}{10}\left(\frac{1-\sqrt 5}{4}s\right)^{n} \right)
+\\ & = \frac{s^3}{8} \left(
+\frac{5 + 3 \sqrt 5}{10} \times \frac{1}{1-\frac{1+\sqrt 5}{4}s} +
+\frac{5 - 3 \sqrt 5}{10} \times \frac{1}{1-\frac{1-\sqrt 5}{4}s}
+\right)
+\\ & = \frac{s^4 + 2s^3}{16 - 4s^2 - 8s}
+\end{align*}
+   $$
    
+   (Assume convergent.)
    
+   (d) Let $t_n$ denote the probability that the first $n$ tosses does not contain TH and $T_n$ denote that event.
    
-   d
+   $$
+   \begin{align*}
+t_n & = \mathbb P(T_n \mid \text{head}(n) ) \mathbb P(\text{head}(n)) + 
+\mathbb P(T_n \mid \text{tail}(n) )\mathbb P(\text{tail}(n))
+\\ & = \mathbb P \left( \bigcap_{i=0}^n \text{jead}(n) 
+\mid \text{head}(n)\right) \times \frac 1 2 + t_{n-1} \times \frac 1 2
+\\ & = \frac 1 2 t_{n-1} + \left( \frac 1 2 \right)^{n}
+\end{align*}
+   $$
+   
+   And $2^{n+1}t_{n+1} = 2^nt_n + 1$ . Therefore $t_n = \frac{n+1}{2^n}$ and by definition $t_n = \mathbb P(Y > n)$ .
