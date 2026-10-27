@@ -63,7 +63,7 @@ A\left( 1_4 - \frac 2 9 J_4  \right) &=
    $$
    (AC)^\mathrm T_{i,j} = (AC)_{j,i} = A_{j,-} C_{-,i}
 =C^\mathrm T_{i,-}  A^\mathrm T_{-, j}
-= C^\mathrm T A^\mathrm T_{i,j}
+= (C^\mathrm T A^\mathrm T)_{i,j}
    $$
    
    Therefore $(AC)^\mathrm T = C^\mathrm T A^\mathrm T$ because they have the same entries. $\square$ 
