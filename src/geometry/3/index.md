@@ -35,8 +35,8 @@
    
    $$
    \begin{align*}
-x^2 + y^2 &= \left( 1 + \frac{\sec t - \tan t}{\sqrt 2} \right)^2
-+ \left( 1 + \frac{\sec t + \tan t}{\sqrt 2} \right)^2
+x^2 + y^2 &= \left( 1 + \frac{\sec t - \tan t}{\sqrt 2} \right)^2 +
+\left( 1 + \frac{\sec t + \tan t}{\sqrt 2} \right)^2
 \\ &= \tan^2 t + \sec^2 t + 2\sqrt 2 \sec t + 2
 \\ &= \sec^2 t+ \sec^2 t + 2 \sqrt 2 \sec t + 1
 \\ &=z^2
@@ -58,7 +58,7 @@ x + y + z &=  1 + \frac{\sec t - \tan t}{\sqrt 2}+
 &\left(1 + \frac{\sec t - \tan t}{\sqrt 2},
 1 + \frac{\sec t + \tan t}{\sqrt 2}
 , -1- \sqrt 2 \sec t
- \right)
+\right)
 \\ &= (1,1,-1) + 
 \sec t (\frac 1{\sqrt 2}, \frac 1{\sqrt 2},-\sqrt 2)+ 
 \tan t(-\frac 1{\sqrt 2}, \frac 1{\sqrt 2}, 0) 
@@ -100,16 +100,50 @@ y = \tan t
    
    Therefore, let $(u',v') = (u,v) - (\frac1{\sqrt5}, \frac1{\sqrt5})$ , and $\frac58 {u'}^2 + \frac54 {v'}^2 = 1$ is an ellipse. Therefore the original curve is an ellipse because we did only rotation and translation. The area of the ellipse is $\frac{4\sqrt2 \pi}{5}$ .
 
-5. When $\mathbf v = \hat i$ and $\mathbf w = \hat j$ this is a standard circle.
+5. > **Lemma** Unit circle is a circle or ellipse under linear isomorphism.
+   > 
+   > **Proof** The original equation is $x^2 + y^2 = 1$ . If the linear isomorphism is
+   > 
+   > $$
+   > \mathbf r' = 
+\begin{pmatrix} a & b \\c & d \end{pmatrix}^{-1}
+\mathbf r
+   > $$
+   > 
+   > The the new equation is
+   > 
+   > $$
+   > (ax+by)^2 + (cx + dy)^2 = 1
+\\
+(a^2 + c^2)x^2 + 2(ab + cd)xy + (b^2 + d^2)y^2 = 1
+   > $$
+   > 
+   > Then
+   > 
+   > $$
+   > \begin{align*}
+&(2(ab + cd))^2 - 4(a^2 + c^2)(b^2 + d^2)
+\\ &= 4a^2b^2 + 8abcd + 4c^2 d^2 -
+4a^2b^2 - 4a^2d^2 - 4b^2c^2 - 4b^2d^2
+\\ &= -4(ad- bc)^2
+\\ &= -4 \begin{vmatrix} a & b\\ c&d \end{vmatrix}^2
+\\ &<0
+\end{align*}
+   > $$
+   > 
+   > And this is not empty set because this $\begin{pmatrix} a & b \\c & d \end{pmatrix}^{-1}$ is bijection. $\square$ 
    
-   For general $\mathbf v$ and $\mathbf w$ , this is the circle above under the linear transformation
+   The equation is the unit circle
    
    $$
-   
+   \mathbf r(t) = \hat i \cos t + \hat j \sin t
    $$
    
+   Under the linear transformation
    
+   $$
+   \mathbf r' = \begin{pmatrix} \mathbf v & \mathbf w \end{pmatrix}
+\mathbf r
+   $$
    
-   s
-
-6. s
+   Which is invertible because $\mathbf v$ and $\mathbf w$ are independent and the transformation is therefore full-ranked. $\square$ 
