@@ -56,7 +56,7 @@
    
    The image of $T$ is $(1,1,1) + \langle (\frac13, \frac23, \frac23), (0, \frac1{\sqrt2}, -\frac1{\sqrt2})\rangle$ .
    
-   (ii) Let $T: \R^3 \to \R^2$ be a linear map. Obviously $\operatorname{null} T \ge 1$ . Then the distance between every two distinct vectors in $\ker T$ is not preserved. $\square$ 
+   (ii) There exists regular tetrahedron but there is no four points with the same distance from each other on a plane. $\square$ 
 
 3. Let $\mathbf v = X\mathbf e_1 + Y \mathbf e_2 + Z \mathbf e_3 = x \hat i + y \hat j + z \hat k$ and $\mathbf u = \tilde X \mathbf e_1 + \tilde Y\mathbf e_2 + \tilde Z \mathbf e_3 = \tilde x \hat i + \tilde y \hat j + \tilde z \hat k$ . Then
    
@@ -68,8 +68,8 @@
    $$
    \begin{align*}
 &(Y\tilde Z - Z\tilde Y)\mathbf e_1 +
-(Z\tilde Z - Z\tilde Z)\mathbf e_2 +
-(Z\tilde Y - Y\tilde X) \mathbf e_3
+(Z\tilde X - X\tilde Z)\mathbf e_2 +
+(X\tilde Y - Y\tilde X) \mathbf e_3
 \\ &= \mathbf v \wedge \mathbf u
 \\ &= (y\tilde z - z\tilde y)\hat i + (z\tilde x - x\tilde z)\hat j +
 (x\tilde y-y\tilde x)\hat k \space \square
@@ -102,15 +102,15 @@
 
 5. (i) $S_1$ is identity. $S_0$ projects every vector along the direction of $\mathbf n$ onto the plane $\mathbf r \cdot \mathbf n = c$ . $S_{-1}$ is reflection across the plane.
    
-   (ii) Note that $S_k$ is not independent of the choice of $\mathbf n$ .
+   (ii)
    
    $$
-   \frac{\lVert \mathbf n \rVert^2}{3} \begin{pmatrix} k & k-1 & k-1
+   \frac{1}{3} \begin{pmatrix} k & k-1 & k-1
 \\ k-1 & k & k-1
 \\ k-1 & k-1 & k \end{pmatrix}
    $$
    
-   (iii) Let $\mathbf e_1 = (-\frac{1}{\sqrt 2}, \frac{1}{\sqrt 2}, 0)$ , $\mathbf e_2 = (\frac{1}{\sqrt 6}, \frac{1}{\sqrt 6}, -\frac{2}{\sqrt 6})$ , $\mathbf e_3 = -\frac{\sqrt2}{\sqrt6}(1,1,1)$ .
+   (iii) Let $\mathbf e_1 = (-\frac{1}{\sqrt 2}, \frac{1}{\sqrt 2}, 0)$ , $\mathbf e_2 = (\frac{1}{\sqrt 6}, \frac{1}{\sqrt 6}, -\frac{2}{\sqrt 6})$ , $\mathbf e_3 = -\frac{1}{\sqrt3}(1,1,1)$ .
    
    $$
    S_k = \begin{pmatrix}
