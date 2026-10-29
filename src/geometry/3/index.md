@@ -4,7 +4,7 @@
 
 # Geometry — Sheet 3
 
-1. (i) $(\frac{x}{1+\sqrt 5})^2 + y^2 = 1$ .
+1. (i) $\frac{x^2}{5} + y^2 = 1$ .
    
    (ii) $4x^2 - y^2 = 20$ .
    

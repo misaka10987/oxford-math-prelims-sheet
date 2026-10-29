@@ -130,7 +130,7 @@ A\begin{pmatrix}\mathbf u \\ \mathbf v \\ \mathbf w\end{pmatrix}
    
    $$
    V = \int_0^1 A \mathrm d z
-= \int_0^1 \frac{1-z^2}{2} \mathrm d z = \frac 1 3
+= \int_0^1 \frac{(1-z)^2}{2} \mathrm d z = \frac 1 6
    $$
    
    (iii) The tetrahedron is $\frac 1 3$ the volume of the prism between $(0, \mathbf u, \mathbf v)$ and $(\mathbf w, \mathbf u + \mathbf w, \mathbf v+ \mathbf w)$ , which is half the volume of the parallelepiped $(\mathbf 0, \mathbf u, \mathbf v, \mathbf w, \mathbf u + \mathbf v , \mathbf v + \mathbf w, \mathbf u + \mathbf w, \mathbf u + \mathbf v + \mathbf w)$ , which has volume $|[\mathbf u, \mathbf v, \mathbf w]|$ . $\square$ 
