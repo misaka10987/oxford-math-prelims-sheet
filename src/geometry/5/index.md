@@ -1,5 +1,6 @@
 +++
 # TOML Frontmatter
+completed = 2026-10-29
 +++
 
 # Geometry — Sheet 5
@@ -44,7 +45,52 @@
    
    The plane of reflection is $\ker(A_\theta B - \mathrm I_3) = \{(x,y,z) \in \R^3 \mid x-2z=0\}$ .
 
-3. TODO
+3. Because $R(\hat i, -\alpha)B\hat i = R(\hat j,\beta)R(\hat i, \gamma)\hat i$ is a linear combination of $\hat i$ and $\hat k$ , and
+   
+   $$
+   \begin{align*}
+R(\hat i, -\alpha) B\hat i
+&= \begin{pmatrix}
+1 & 0 & 0
+\\ 0 & \cos\alpha & \sin\alpha
+\\ 0 & -\sin\alpha & \cos\alpha
+\end{pmatrix}
+\begin{pmatrix}
+\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} & 0\\
+\frac{1}{2} & -\frac{1}{2} & \frac{1}{\sqrt{2}}\\
+\frac{1}{2} & - \frac{1}{2} &-\frac{1}{\sqrt{2}}
+\end{pmatrix}
+\begin{pmatrix}
+1 \\ 0 \\ 0
+\end{pmatrix}
+\\ &=
+\begin{pmatrix}
+\frac{1}{\sqrt{2}}\\
+\frac{\sin\alpha}{2} + \frac{\cos\alpha}{2}\\
+\frac{\cos\alpha}{2}-\frac{\sin\alpha}{2}
+\end{pmatrix}
+\end{align*}
+   $$
+   
+   We have $\frac{\cos\alpha}{2}+\frac{\sin\alpha}{2} = 0$ and $\tan\alpha = -1$ . Therefore $\alpha = -\frac\pi4$ .
+   
+   Because $R(\hat i, -\alpha)B R(\hat i, -\gamma) = R(\hat j, \beta)$ , we have
+   
+   $$
+   \begin{pmatrix}
+\frac{1}{\sqrt{2}} & \frac{\cos\gamma}{\sqrt{2}} & \frac{\sin\gamma}{\sqrt{2}}\\
+0 & -\sin\gamma & \cos\gamma\\
+\frac{1}{\sqrt{2}} & - \frac{\cos\gamma}{\sqrt{2}}& -\frac{\sin\gamma}{\sqrt{2}}
+\end{pmatrix}
+=
+\begin{pmatrix}
+\cos\beta & 0 & -\sin\beta\\
+0 & 1 & 0\\
+\sin\beta & 0 & \cos\beta
+\end{pmatrix}
+   $$
+   
+   Therefore $\gamma = -\frac\pi2$ and $\beta = \frac\pi4$ .
 
 4. Let $s = \sin t$ , $c = \cos t$ , and
    
@@ -96,6 +142,31 @@ M =& A'(t) A(t)^\mathrm T
    
    Where $\mathbf e_\theta = (\cos\theta\cos\phi, \cos\theta\sin\phi, -\sin\theta)$ and $\mathbf e_\phi = (-\sin\phi, \cos\phi, 0)$ .
    
-   s
-
-6. d
+   $$
+   \dot{\mathbf e_\theta} = -\dot\theta\mathbf e_r +
+\dot\phi\cos\theta\mathbf e_\phi
+\\
+\dot{\mathbf e_\phi}= -{\dot\phi}(\sin\theta\mathbf e_r + \cos\theta\mathbf e_\theta)
+   $$
+   
+   (ii)
+   
+   $$
+   \lVert \mathbf e_r\rVert = \lVert \mathbf e_\theta \rVert
+= \lVert \mathbf e_\phi\rVert = 1
+\\
+\mathbf e_r \cdot \mathbf e_\theta
+= \cos^2\phi\cos\theta\sin\theta+\sin^2\phi\cos\theta\sin\theta -
+\cos\theta\sin\theta
+= 0
+\\
+\mathbf e_r \wedge \mathbf e_\theta = 
+\begin{pmatrix} -\sin\phi\sin^2\theta - \sin\phi\cos^2\theta
+\\\cos\phi\sin^2\theta +\cos\phi\cos^2\theta
+\\ 0
+\end{pmatrix}
+= \mathbf e_\phi
+\space\square
+   $$
+   
+   (iii) $\omega = (-\dot\theta\sin\phi,\dot\theta\cos\phi, \dot\phi)$ .
