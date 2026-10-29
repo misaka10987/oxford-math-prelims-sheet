@@ -68,8 +68,8 @@
    $$
    \begin{align*}
 &(Y\tilde Z - Z\tilde Y)\mathbf e_1 +
-(Z\tilde Z - Z\tilde Z)\mathbf e_2
-+ (Z\tilde Y - Y\tilde X) \mathbf e_3
+(Z\tilde Z - Z\tilde Z)\mathbf e_2 +
+(Z\tilde Y - Y\tilde X) \mathbf e_3
 \\ &= \mathbf v \wedge \mathbf u
 \\ &= (y\tilde z - z\tilde y)\hat i + (z\tilde x - x\tilde z)\hat j +
 (x\tilde y-y\tilde x)\hat k \space \square
