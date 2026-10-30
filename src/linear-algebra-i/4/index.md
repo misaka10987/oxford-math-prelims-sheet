@@ -17,9 +17,7 @@ completed = 2026-10-21
 
 3. (a) It suffices to show that $\dim U / (U \cap W) = \dim W / (U \cap W) = 1$ .
    
-   Obviously, both dimensions are not zero, otherwise one of $U$ and $W$ is contained in the other.
-   
-   Let $U / (U \cap W) \cong C \subseteq V$ for a complement space $C$ . Assume $\dim C \ge 2$ , then because $W \cap C = \left\{ \mathbf 0 \right\}$ ,
+   Obviously, both dimensions are not zero, otherwise one of $U$ and $W$ is contained in the other. Let $U = (U \cap W) \oplus C$ for a complement space $C \cong U/(U \cap W)$ . Assume $\dim C \ge 2$ , then because $W \cap C = \left\{ \mathbf 0 \right\}$ ,
    
    $$
    \begin{align*}
@@ -41,7 +39,7 @@ completed = 2026-10-21
 = 1
    $$
    
-   (c) Let $B$ be a basis of $U$ . Let $V / U \cong C \subseteq V$ for a complement space $C$ and $\{ \mathbf v, \mathbf w, \cdots \}$ be a basis of $C$ . Then for all real $k \ne 0$ , $X = \langle B, \mathbf v + k \mathbf w \rangle$ satisfies $U < X < V$ . $\square$ 
+   (c) Let $B$ be a basis of $U$ . Let $V = U \oplus C$ for a complement space $C\cong V/U$ and $\{ \mathbf v, \mathbf w, \cdots \}$ be a basis of $C$ . Then for all real $k \ne 0$ , $X = \langle B, \mathbf v + k \mathbf w \rangle$ satisfies $U < X < V$ . $\square$ 
 
 4. | Subspace   | Basis                                     | Dimension |
    | ---------- | ----------------------------------------- | --------- |
@@ -56,7 +54,7 @@ completed = 2026-10-21
    
    > **Lemma** $U \subsetneq W \implies \dim U < \dim W$ .
    > 
-   > **Proof** $\dim W = \dim(U \oplus (W/U) ) = \dim U + \dim W/U$ . $\square$ 
+   > **Proof** $W \cong (W/U) \oplus U \implies \dim W = \dim(U \oplus (W/U) ) = \dim U + \dim W/U$ . $\square$ 
    
    Then $\dim U_0 < \dim U_1 < \cdots < \dim U_k \le n$ . The strictly increasing chain of natural numbers below $n$ cannot be longer than $n+1$ , and the only way of length $n + 1$ is to have $\dim U_r = r$ . $\square$ 
    
@@ -68,7 +66,7 @@ completed = 2026-10-21
    
    (b)
    
-   (i) False. $W \subseteq U$ and internal direct sum is undefined. (The statement is true if interpreted as external direct sum.)
+   (i) False. $W \subseteq U$ and internal direct sum is undefined.
    
    (ii) True. $W \cap U = \{ \mathbf 0 \}$ and $\dim W + \dim U = 1 + 2 = 3$ . $\square$ 
    
