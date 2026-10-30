@@ -14,25 +14,25 @@ completed = 2026-10-21
 2 & 2 & 3 & 2\\
 2 & 2 & 2 & 3
 \end{pmatrix}
-= \mathrm 1_4 + 2 J_4
+= \mathrm I_4 + 2 J_4
    $$
    
    $$
    \begin{align*}
-A\left( 1_4 - \frac 2 9 J_4  \right) &=
-1_4 + 2J_4  - \frac 2 9 J_4 - \frac 4 9 {J_4}^2
-\\ & = 1_4 + 2J_4 - \frac 2 9 J_4 - \frac {16} 9 J_4
-\\ & = 1_4
+A\left(\mathrm I_4 - \frac 2 9 J_4  \right) &=
+\mathrm I_4 + 2J_4  - \frac 2 9 J_4 - \frac 4 9 {J_4}^2
+\\ & = \mathrm I_4 + 2J_4 - \frac 2 9 J_4 - \frac {16} 9 J_4
+\\ & = \mathrm I_4
 \end{align*}
    $$
    
    $$
-   A^{-1} = 1_4 - \frac 2 9 J_4  =
+   A^{-1} = \mathrm I_4 - \frac 2 9 J_4  =
 \begin{pmatrix}
-\frac 7 9 & 1 & 1 & 1 \\
-1 & \frac 7 9 & 1 & 1 \\
-1 & 1 & \frac 7 9 & 1 \\
-1 & 1 & 1 & \frac 7 9
+\frac 7 9 & -\frac29 & -\frac29 & -\frac29
+\\-\frac29 & \frac 7 9 & -\frac29 & -\frac29
+\\-\frac29 & -\frac29 & \frac 7 9 & -\frac29
+\\-\frac29 & -\frac29 & -\frac29 & \frac 7 9
 \end{pmatrix}
    $$
 
@@ -56,7 +56,7 @@ A\left( 1_4 - \frac 2 9 J_4  \right) &=
 = (A^\mathrm T + B ^ \mathrm T)_{i,j}
    $$
    
-   Therefore $(A+B)^\mathrm T = A^\mathrm T + B^\mathrm T$ because they have the same entries. $\square$ 
+   Therefore $(A+B)^\mathrm T = A^\mathrm T + B^\mathrm T$ because they have the same entries. Similarly $(\lambda A)^\mathrm T = \lambda A^\mathrm T$ . $\square$ 
    
    (ii) We use $A_{i,-}$ and $A_{-,j}$ to denote row and column vectors.
    
