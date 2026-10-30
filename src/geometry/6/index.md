@@ -124,9 +124,9 @@ h\dot\theta\cos\theta + \dot h \sin\theta, \dot h)|
 \\ &= (b\cos\phi, b\sin\phi,0) +
 (a \cos\theta \cos\phi, a\cos\theta\sin\phi, a \sin\theta)
 \\ &= (
-    (b + a\cos\theta)\cos\phi,
-    (b + a \cos\theta)\sin\phi,
-    a \sin\theta
+ (b + a\cos\theta)\cos\phi,
+ (b + a \cos\theta)\sin\phi,
+ a \sin\theta
 ) \space \square
 \end{align*}
    $$
@@ -142,6 +142,96 @@ h\dot\theta\cos\theta + \dot h \sin\theta, \dot h)|
    
    (iii) Obtain $x(s)$ and $y(s)$ in (ii) by using $(1,m)$ and $(-m, 1)$ as a new basis for the plane.
 
-5. Let $\theta_0$ be the common elevation  Let $\gamma:[0,1] \to \R^3 = (t, \theta$
+5. Let $\gamma:[\phi_0,\phi_1] \to \R^3 = t \mapsto \mathbf r(\theta_0, t)$ be a parameterization of the path.
+   
+   Then
+   
+   $$
+   \begin{align*}
+\gamma'(t) &= \mathbf r(\theta_0, t)'
+\\ &=(
+ (b + a\cos\theta_0)\cos t,
+ (b + a \cos\theta_0)\sin t,
+ a \sin\theta_0
+)'
+\\ &= (b + a\cos\theta_0)( -\sin t, \cos t,0)
+\end{align*}
+   $$
+   
+   And the arc length is
+   
+   $$
+   \begin{align*}
+\int_{\phi_0}^{\phi_1} |\gamma'(t)| \mathrm d t
+& = \int_{\phi_0}^{\phi_1}  |(b + a\cos\theta_0)( -\sin t, \cos t,0)| \mathrm d t
+\\ &= (b + a\cos\theta_0) \int_{\phi_0}^{\phi_1}
+\sqrt{ (-\sin t)^2 + \cos^2 t } \mathrm d t
+\\ &= (b + a\cos\theta_0) (\phi_1 - \phi_0)
+\end{align*}
+   $$
+   
+   By the geometric meaning of $\theta$ and $\phi$ , a normal vector $\mathbf n$ at $\mathbf r(\theta, \phi)$ is the vector pointing from the centre of the circle to the point. which is $(a\cos\phi\cos\theta, a\cos\phi\sin\theta, a\sin\theta)$ . Then calculating
+   
+   $$
+   \begin{align*}
+\gamma''(t) \wedge \mathbf n 
+& \propto ( -\cos t, -\sin t,0)
+\wedge (\cos t\cos\theta_0, \cos t \sin\theta_0, \sin\theta_0)
+\\ &= (-\sin t \sin\theta, \cos t \sin\theta, 0)
+\end{align*}
+   $$
+   
+   This is generally not zero and the path is only a geodesic if $\sin \theta = 0$ and $\theta = 0$ or $\pi$ . $\square$ 
 
-6. d
+6. (i)
+   
+   $$
+   \frac{\partial}{\partial u} (\mathbf n \cdot \mathbf n)
+= \mathbf n_u \cdot \mathbf n  + \mathbf n \cdot \mathbf n_u
+   $$
+   
+   Therefore $\mathbf n_u \cdot \mathbf n = \frac{\partial 1}{\partial u} = 0$ and similarly $\mathbf n_v \cdot \mathbf n = 0$ and they are tangent vectors. Then $\mathbf n_u \wedge \mathbf n_v$ has the same direction as $\mathbf n$ (because the intersection of two non-parallel planes in three dimensional space can only be a straight line). Since $\mathbf n$ has the same direction as $\mathbf r_u \wedge \mathbf r_v$ , $\mathbf n_u \wedge \mathbf n_v = K(u,v) \mathbf r_u \wedge \mathbf r_v$ . $\square$ 
+   
+   (ii) $\frac{1}{R^2}$ .
+   
+   (iii)
+   
+   $$
+   \mathbf n (\theta,\phi) = (\cos\theta \cos\phi, \cos\theta\sin\phi, \sin\theta)
+   $$
+   
+   And
+   
+   $$
+   \mathbf r_\theta = -a(\cos\phi\sin\theta, \sin\phi\sin\theta, \cos\theta)
+\\
+\mathbf r_\phi = (a \cos\theta + b)(-\sin\phi,\cos\phi,0)
+   $$
+   
+   Therefore,
+   
+   $$
+   \begin{align*}
+\frac{\mathbf r_\theta \wedge \mathbf r_\phi}
+{|\mathbf r_\theta \wedge \mathbf r_\phi|}
+& = \frac{
+    (-\cos\phi\sin\theta, -\sin\phi\sin\theta, \cos\theta)
+    \wedge (-\sin\phi,\cos\phi,0)
+}{
+    |(-\cos\phi\sin\theta, -\sin\phi\sin\theta, \cos\theta)
+    \wedge (-\sin\phi,\cos\phi,0)|
+}
+\\ &= (\cos\phi\cos\theta,\sin\phi\cos\theta,\sin\theta)
+\\ &= \mathbf n(\theta,\phi)
+\end{align*}
+   $$
+   
+   And $\mathbf r_\theta \wedge \mathbf r_\phi = -a(b +  a\cos\theta)\mathbf n(\theta,\phi)$ . By calculation, $\mathbf n_\theta \wedge \mathbf n_\phi = -\cos\theta\mathbf n(\theta,\phi)$ . Thus
+   
+   $$
+   K(\theta,\phi) = \frac{\cos\theta}{a(b + a \cos\theta)}
+   $$
+   
+   Because $b > a$ , $\operatorname{sgn} K(\theta,\phi) = \operatorname{sgn}\cos\theta$ , which is positive for $\theta\in(0, \frac\pi2) \cup (\frac{3\pi}2, 2\pi)$ and negative for $\theta \in (\frac\pi2, \frac{3\pi}2)$ .
+   
+   The plane $x=y=0$ has a constant zero $K$ .
