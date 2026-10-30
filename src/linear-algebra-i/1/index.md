@@ -148,7 +148,7 @@ z = t
    
    (iv) False.
    
-   Let $A = \mathbf 1$ and $B = -\mathbf 1$ .
+   Let $A = \mathrm I$ and $B = -\mathrm I$ .
    
    (v) False.
    
