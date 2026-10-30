@@ -118,15 +118,15 @@ U^\perp \cap U &= \{ v \in U \mid \langle v, u \rangle = 0
    
    Therefore $U^\perp \cap U = \{0\}$ . $\square$ 
    
-   (b) $\forall v,w \in V, \lambda \in \R$ ,
+   (b) $\forall v,w \in V, \lambda \in \R$ , let $\mathbf e_i$ be standard basis of $\R^m$ ,
    
    $$
    \begin{align*}
-T(v + \lambda w) & = \sum_{i=1}^m \langle v + \lambda w, u_i \rangle
+T(v + \lambda w) & = \sum_{i=1}^m \langle v + \lambda w, u_i \rangle \mathbf e_i
 \\ & = \sum_{i=1}^m (\langle v, u_i \rangle +
-\lambda \langle w, u_i \rangle)
-\\ & = \sum_{i=1}^m\langle v, u_i \rangle +
-\lambda\sum_{i=1}^m\langle w, u_i \rangle
+\lambda \langle w, u_i \rangle)\mathbf e_i
+\\ & = \sum_{i=1}^m\langle v, u_i \rangle\mathbf e_i +
+\lambda\sum_{i=1}^m\langle w, u_i \rangle\mathbf e_i
 \\ & = T(v) + T(\lambda w)
 \space \square
 \end{align*}
@@ -139,7 +139,7 @@ T(v + \lambda w) & = \sum_{i=1}^m \langle v + \lambda w, u_i \rangle
    > **Proof** The forward direction is obvious. Let $u = \sum_{i=1}^m a_i u_i$ where $a_i \in \R$ .
    > 
    > $$
-   > \langle v, u \rangle = a_i \sum_{i=1}^m \langle v,u_i \rangle
+   > \langle v, u \rangle = \sum_{i=1}^m a_i  \langle v,u_i \rangle
    > $$
    > 
    > Then the backward direction is obvious because every term in the summation is zero.
@@ -241,9 +241,9 @@ ax + by + cz & = \langle \mathbf v , \mathbf w \rangle
    
    Therefore a subspace.
    
-   As for the direct sum part, let $\{u_i \mid 1 \le i \le \dim U \}$ be a basis of $U$ and $T: V \to \R^{\dim U} = v \mapsto (\langle v, u_1\rangle, \cdots, \langle v, u_n \rangle)$ . Then by the same argument in 4 (c) $\operatorname{rank} T = \dim U$ .
+   As for the direct sum part, let $\{u_i \mid 1 \le i \le \dim U \}$ be a basis of $U$ and $T: V \to \mathbb C^{\dim U} = v \mapsto (\langle v, u_1\rangle, \cdots, \langle v, u_n \rangle)$ . Then by the same argument in 4 (c) $\operatorname{rank} T = \dim U$ .
    
-   Also, $\ker T = U^\perp$ because obviously $\ker T \subseteq U^\perp$ , and if $v \in \ker T$ , $\forall u \in U$ , let $u = \sum_{i=1}^{\dim U} a_i u_i$ where $a_i \in \R$ , then
+   Also, $\ker T = U^\perp$ because obviously $\ker T \supseteq U^\perp$ , and if $v \in \ker T$ , $\forall u \in U$ , let $u = \sum_{i=1}^{\dim U} a_i u_i$ where $a_i \in \mathbb C$ , then
    
    $$
    \begin{align*}
