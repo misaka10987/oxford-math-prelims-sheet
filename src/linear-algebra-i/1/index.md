@@ -60,7 +60,7 @@ z = t
 
 2. $(A, C)$ , $(C, A)$ , $(D, F)$ , and $(F, D)$ .
    
-   The corresponding $(X - 2Y)$ s are $\begin{pmatrix} 3 & -8 \\ -5 & -4 \end{pmatrix}$ , $\begin{pmatrix} -3 & 8 \\ 5 & 4 \end{pmatrix}$ , $\begin{pmatrix} 3 & -6 & 9 \\ -4 & -4 & 0 \end{pmatrix}$ , and $\begin{pmatrix} -3 & 6 & -9 \\ 4 & 4 & 0 \end{pmatrix}$ .
+   The corresponding $(X - 2Y)$ s are $\begin{pmatrix} 3 & -8 \\ -5 & -4 \end{pmatrix}$ , $\begin{pmatrix} -3 & 1 \\ -2 & -4 \end{pmatrix}$ , $\begin{pmatrix} 3 & -6 & 9 \\ -4 & -4 & 0 \end{pmatrix}$ , and $\begin{pmatrix} -3 & -3 & 0 \\ -1 & -4 & 3 \end{pmatrix}$ .
 
 3. $$
    \begin{pmatrix} 1 & 2 \\ 2 & 3 \end{pmatrix}
@@ -116,12 +116,12 @@ z = t
    (iii)
    
    $$
-   \left \{ k \mathrm I_{2} \mid k \in \Z \right\}
+   \left \{ k \mathrm I_{2} \mid k \in \R \right\}
    $$
 
 5. $$
-   \begin{pmatrix}1 & 0 & 1 & \mathop{-}8 & 8 & 1\\
-0 & 1 & \mathop{-}2 & 3 & \mathop{-}2 & 0\\
+   \begin{pmatrix}1 & 0 & 1 & -8 & 8 & 0\\
+0 & 1 & -2 & 3 & -2 & 0\\
 0 & 0 & 0 & 0 & 0 & 1\end{pmatrix}
    $$
    
