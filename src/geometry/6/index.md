@@ -124,9 +124,9 @@ h\dot\theta\cos\theta + \dot h \sin\theta, \dot h)|
 \\ &= (b\cos\phi, b\sin\phi,0) +
 (a \cos\theta \cos\phi, a\cos\theta\sin\phi, a \sin\theta)
 \\ &= (
- (b + a\cos\theta)\cos\phi,
- (b + a \cos\theta)\sin\phi,
- a \sin\theta
+(b + a\cos\theta)\cos\phi,
+(b + a \cos\theta)\sin\phi,
+a \sin\theta
 ) \space \square
 \end{align*}
    $$
@@ -150,9 +150,9 @@ h\dot\theta\cos\theta + \dot h \sin\theta, \dot h)|
    \begin{align*}
 \gamma'(t) &= \mathbf r(\theta_0, t)'
 \\ &=(
- (b + a\cos\theta_0)\cos t,
- (b + a \cos\theta_0)\sin t,
- a \sin\theta_0
+(b + a\cos\theta_0)\cos t,
+(b + a \cos\theta_0)\sin t,
+a \sin\theta_0
 )'
 \\ &= (b + a\cos\theta_0)( -\sin t, \cos t,0)
 \end{align*}
@@ -215,11 +215,11 @@ h\dot\theta\cos\theta + \dot h \sin\theta, \dot h)|
 \frac{\mathbf r_\theta \wedge \mathbf r_\phi}
 {|\mathbf r_\theta \wedge \mathbf r_\phi|}
 & = \frac{
-    (-\cos\phi\sin\theta, -\sin\phi\sin\theta, \cos\theta)
-    \wedge (-\sin\phi,\cos\phi,0)
+(-\cos\phi\sin\theta, -\sin\phi\sin\theta, \cos\theta)
+\wedge (-\sin\phi,\cos\phi,0)
 }{
-    |(-\cos\phi\sin\theta, -\sin\phi\sin\theta, \cos\theta)
-    \wedge (-\sin\phi,\cos\phi,0)|
+|(-\cos\phi\sin\theta, -\sin\phi\sin\theta, \cos\theta)
+\wedge (-\sin\phi,\cos\phi,0)|
 }
 \\ &= (\cos\phi\cos\theta,\sin\phi\cos\theta,\sin\theta)
 \\ &= \mathbf n(\theta,\phi)
