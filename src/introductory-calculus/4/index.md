@@ -1,0 +1,39 @@
++++
+# TOML Frontmatter
++++
+
+# Introductory Calculus — Sheet 4
+
+1. Handwritten.
+   
+   ![](./1.png)
+
+2. Handwritten.
+   
+   ![](./2.png)
+
+3. Handwritten.
+   
+   ![](./3.png)
+
+4. Handwritten.
+   
+   ![](./4.a.png)
+   
+   ![](./4.b.png)
+
+5. Handwritten.
+   
+   ![](./5.a.png)
+   
+   ![](./5.b.png)
+
+6. Handwritten.
+   
+   ![](./6.png)
+
+7. Handwritten.
+   
+   ![](./7.a.png)
+   
+   ![](./7.b.png)
