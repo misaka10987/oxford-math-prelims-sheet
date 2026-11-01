@@ -53,7 +53,7 @@ S_\alpha &= \int_0^{2\pi} \int_0^\alpha |\mathbf r_\theta \wedge \mathbf r_\phi|
 \iint_D \sqrt{1  + {z_x^2} + {z_y}^2  } \mathrm dx \mathrm dy
 &= \iint_D
 \sqrt{
-    1 + \frac{x^2}{1-x^2-y^2} +
+ 1 + \frac{x^2}{1-x^2-y^2} +
 \frac{y^2}{1-x^2-y^2}
 }
 \mathrm dx \mathrm dy
@@ -144,8 +144,50 @@ y = \rho_0 - \lambda_2 f(\cos\theta)
 \end{align*}
    $$
    
-   (ii)
+   (ii) $\mathbf r_\theta = (-\sin\theta,\cos\theta,0,0)$ and $\mathbf r_\phi = (0,0,-\sin\phi,\cos\phi)$ . Therefore,
    
-   d
+   $$
+   \begin{align*}
+|\mathbf r'| &= |\theta'\mathbf r_\theta + \phi'\mathbf r_\phi|
+\\ &= | (- \theta'\sin\theta,\theta'\cos\theta,-\phi'\sin\phi, \phi'\cos\phi)|
+\\ &=\sqrt{ {\theta'}^2 + {\phi'}^2 }
+\\ &= |(\theta', \phi')|
+\\ &= |\gamma'|
+\end{align*}
+   $$
+   
+   Therefore $\int_a^b|\mathbf r'| \mathrm dt = \int_a^b |\gamma'| \mathrm dt$ and by definition the arc length are equal. $\square$ 
+   
+   The above says $\mathbf r$ is an isometry between $U$ and the flat torus, thus the area should be equal to that of $U$ , which is $4\pi^2$ .
 
-6. d
+6. $\mathbf s_X = (\cos Z, \sin Z, 0)$ and $\mathbf s_Z = (-X\sin Z, X \cos Z, 1)$ . Then $\mathbf s_X \wedge \mathbf s_Z = (\sin Z, -\cos Z, X)$ and $|\mathbf s_X \wedge \mathbf s_Z| = \sqrt{X^2 + 1}$ .
+   
+   $$
+   \begin{align*}
+\int_0^C \int_A^B |\mathbf s_X \wedge \mathbf s_Z|
+\mathrm dX \mathrm dZ
+& = \int_0^C \int_A^B \sqrt{X^2 + 1}
+\mathrm dX \mathrm dZ
+\\ &= C \int_A^B \cosh \operatorname{arcsinh} X
+\\ &= \frac12 C (\operatorname{arcsinh} x + x\sqrt{x^2 + 1})
+\big|_A^B
+\end{align*}
+   $$
+   
+   Use the isometry $\mathbf r(x,y) \mapsto \mathbf s(\sinh x, y)$ . Then the area of the partial helicoid is equal to the $\frac{C}{2\pi}$ of its preimage on the catenoid, which is calculated by setting, $a = \operatorname{arcsinh}A$ , and $b=\operatorname{arcsinh}B$ .
+   
+   $$
+   \begin{align*}
+&\frac{C}{2\pi}
+\times
+\pi \left( \frac12 \sinh(2x) + x \right)
+\big|_{a=\operatorname{arcsinh}A}^{b=\operatorname{arcsinh}B}
+\\ &= \frac12 C
+\left( \sinh x \cosh x + x \right)
+\big|_{a=\operatorname{arcsinh}A}^{b=\operatorname{arcsinh}B}
+\\ &= \frac 12 C(x\cosh\operatorname{arcsinh} x + \operatorname{arcsinh} x )
+\big|_A^B
+\\ &=\frac12 C (\operatorname{arcsinh} x + x\sqrt{x^2 + 1})
+\big|_A^B
+\end{align*}
+   $$
