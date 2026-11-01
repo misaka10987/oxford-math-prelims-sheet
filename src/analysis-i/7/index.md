@@ -151,10 +151,53 @@ x\sum_n \frac{(-1)^n}{(n!)^2} n \frac{2n-1}{2}
    
    Let $a_n$ denote the terms of $F(x)$ , then $\frac{|a_{n+1}|}{|a_n|} = \frac{F_{n+1} }{F_n}x$ and the radius of convergence is $\lim_{n \to \infin} \frac{F_n}{F_{n+1} } = \frac{\sqrt5 - 1}{2}$ .
    
-   
-   
-   s
-   
-   d
+   $$
+   \sum_n F_{n+2}x^n = \sum_{n} F_{n+1}x^n + \sum_n F_n x^n
+\\
+\frac{1}{x^2}(F(x)- x) = \frac1x F(x) + F(x)
+\\
+F(x) = \frac{x}{1-x-x^2}
+   $$
 
-6. s
+6. (i)
+   
+   $$
+   \begin{align*}
+\pi_n  &= \prod_{i=1}^n \frac{1}{1-\frac{1}{p_i}}
+\\ &= \prod_{i=1}^n \sum_m \frac{1}{ {p_i}^m }
+\\ & = \sum_{m\in \N^n} \prod_{i=1}^n \frac{1}{p_i^{m_i}}
+\end{align*}
+   $$
+   
+   Because of unique factorization of integer, when $n \to \infin$ , every term in the harmonic series is covered exactly once, therefore $\pi_n$ diverges. $\square$ 
+   
+   (ii)
+   
+   $$
+   \begin{align*}
+-\ln\left( 1 - \frac 1 x \right) = \sum_{n=1}^\infin 
+\frac{\left(\frac 1 x\right)^n}{n}
+= \frac 1 x + \sum_{n=2}^\infin \frac{1}{nx^n}
+\end{align*}
+   $$
+   
+   And for $x \ge 2$ ,
+   
+   $$
+   \sum_{n=2}^\infin \frac{1}{nx^n} < \sum_{n=2}^\infin \frac{1}{x^n}
+= \frac {1}{x^2} \times \frac{1}{1-\frac 1 x } =
+\frac{1}{x(x-1)} < \frac 1 x \space\square
+   $$
+   
+   (iii)
+   
+   $$
+   \begin{align*}
+\sum_n \frac{1}{p_n} & > \frac 1 2 \sum_n -
+\ln\left(1 - \frac{1}{p_n}\right)
+\\ &= \frac 1 2 \sum_n \ln\left(1 - \frac{1}{p_n}\right)^{-1}
+\\ &= \frac 1 2 \ln \prod_n \left(1 - \frac{1}{p_n}\right)^{-1}
+\\ &= \frac 1 2 \ln \pi_n
+\\ &\to \infin \space \square
+\end{align*}
+   $$
