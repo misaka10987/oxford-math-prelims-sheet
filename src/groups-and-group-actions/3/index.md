@@ -47,9 +47,19 @@
    
    (ii) If $|g|$ and $|h|$ are both prime, then $\langle g \rangle \cap \langle h \rangle = \{e \}$ and $g \sim h \implies g = h \implies h \sim g$ . On the other hand, if $|g|$ is not prime, let $|g| = mn$ where $m,n \ne 1$ and $\gcd(m,n) = 1$ . Then $g^m \sim g$ but $g$ is not a power of $g^m$ (otherwise $(g^m)^k = g\implies mn \mid mk-1$ but $m \nmid mk-1$ ). $\square$ 
 
-6. (i) TODO
+6. (i) Let $g = \phi(h_0,k_0)$ . If $g = \phi(h_1,k_1)$ , let $h_1 = h_0h'$ and $k_1 =k'k_0$ , then $h_0k_0 = h_0h'k'k_0$ and $h'k' = 1$ , which gives a unique $h' \in H \cap K$ for every $h_1$ . On the other hand, given an $h' \in H \cap K$ , $(h_0h',{h'}^{-1}k_0)$ is distinct for different $h'$ s and $\phi(h_0h',{h'}^{-1}k_0) = \phi(h_0, k_0)$ , therefore we can construct a bijection between pairs of $(h,k)$ s such that $\phi(h,k) =\phi( h_0,k_0)$ and elements of $H \cap K$ , and $|\phi^{-1}(g)|= |H \cap K|$ $\forall g \in HK$ .
    
-   (i) It is easy to verify that $\phi$ is a homomorphism.
+   Obviously $\phi$ is a surjection. Then
+   
+   $$
+   |H||K| = |H \times K|
+= \left| \bigcup_{g \in HK} \phi^{-1}(g) \right|
+= \sum_{g \in HK} |\phi^{-1}(g)|
+= |HK||H \cap K|
+\space \square
+   $$
+   
+   (ii) If $G$ is Abelian then $\phi$ is a homomorphism, and
    
    $$
    \begin{align*}
@@ -58,22 +68,11 @@
 &= \{ (h, h^{-1}) \mid h \in H, h^{-1} \in H \cap K  \}
 \\
 & = \{ (h, h^{-1}) \mid h \in H \cap K  \}
+\\ 
+& \cong H \cap K
+\\
+& = \{ e \}
 \end{align*}
    $$
    
-   Therefore $\forall g \in HK$ , $|\phi^{-1}(g)| = |\ker \phi | = |H \cap K|$ .
-   
-   Obviously $\phi$ is surjective. Then
-   
-   $$
-   (H \times K) / \ker \phi \cong \operatorname{im} \phi = HK
-\\
-(H \times K) / (H \cap K) \cong HK
-\\
-|HK| = \frac{|H \times K|}{|H \cap K|} = \frac{|H||K|}{|H \cap K|}
-\space \square
-   $$
-   
-   (ii) 
-   
-   d
+   Therefore $\phi$ is an isomorphism and $H \times K \cong HK$ . $\square$ 
