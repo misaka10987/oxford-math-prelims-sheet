@@ -132,8 +132,14 @@ g : \R \to \R = x \mapsto
 \end{align*}
    $$
    
-   (iii) Let $c = f(1)$ . Then $f(x) = cx$ $\forall x \in \mathbb Q$ . If $f$ is continuous and $f(x_0) \ne cx_0$ , let $\lim_{x \to x_0}f(x) = L \ne cx_0$ , but then for $\varepsilon$ 
+   (iii) Let $c = f(1)$ . Then $f(x) = cx$ $\forall x \in \mathbb Q$ . If $f$ is continuous and $f(x_0) \ne cx_0$ , let $\lim_{x \to x_0}f(x) = L \ne cx_0$ , but then for $\varepsilon = \frac12 |L-cx_0|$ , $\forall \delta > 0$ , $\exist q \in \mathbb Q \cap (x_0 - \delta, x_0 + \delta)$ by density of rationals, and $f(q) \notin ( L - \varepsilon, L + \varepsilon)$ , thus the limit does not exist at $x_0$ , which contradicts with the fact that $f$ is continuous. $\square$ 
    
-   d
-
-7. d
+   (iv)
+   
+   $$
+   \begin{align*}
+\lim_{x \to x_0} f(x) &= \lim_{x \to 0} f(x + x_0)
+\\ &= \lim_{x \to 0} (f(x)+f(x_0))
+\\ &= f(x_0) \space \square
+\end{align*}
+   $$
