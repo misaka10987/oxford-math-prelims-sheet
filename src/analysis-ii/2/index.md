@@ -75,6 +75,20 @@
    
    (iii) Let $\mathbf G : \R \to \R^2 = x \mapsto (fx,gx)$ . By (i) $\mathbf G$ is continuous, then $fg = m \circ \mathbf G$ is continuous. $\square$ 
 
-2. Let $\varepsilon = $
+2. Let $\varepsilon = \frac14$ . $\forall \delta \in \R_{>0}$ and $(x,y) \in \R^2$ , $|(x,y) -(0,0)| < \delta$ , we can always find a point where $x = y$ and $F(x,y) = \frac12 > \varepsilon$ .
    
-   d
+   $f_a(x) = F(x,a) = \frac{ax}{x^2 + a^2}$ is continuous because
+   
+   - It is continuous for $a \ne 0$ since $ax$ is continuous and $x^2 + a^2$ is continuous and nonzero.
+   
+   - For $a = 0$ , by definition $f_a(x) = 0$ is continuous.
+   
+   Similarly $g_a(y)$ is continuous. $\square$ 
+
+3. (i) $\N$ .
+   
+   (ii) $\{n + 2^{-m} \mid m,n \in \N_{\ge 1} \}$ .
+   
+   (iii) $\R$ .
+   
+   (iv) 
